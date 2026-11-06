@@ -1,0 +1,180 @@
+cynical_socialists = {
+	aggressiveness = 1.0
+	trade_willingness = 1.0
+	bravery = 0.5
+	combat_bravery = 1.0
+
+	military_spending = 1.0
+	colony_spending = 1.1
+
+	federation_acceptance = 0 #-10
+	nap_acceptance = -10
+	commercial_pact_acceptance = 20
+	research_agreement_acceptance = 10
+	defensive_pact_acceptance = 0
+	migration_pact_acceptance = 0
+	loyalty_acceptance = 0.5
+
+	advanced_start_chance = 25
+
+	weapon_preferences = weapon_type_kinetic
+	armor_ratio = 0.4
+	shields_ratio = 0.5
+	hull_ratio = 0.1
+
+	threat_modifier = 1.0
+	threat_others_modifier = 0.75
+	friction_modifier = 0.5
+	claims_modifier = 1.5
+
+	behaviour = {
+		conqueror = yes
+		subjugator = yes
+		liberator = no
+		opportunist = yes
+		slaver = no
+		uplifter = no
+		purger = yes
+		displacer = no
+		infiltrator = yes
+		dominator = no
+		robot_exploiter = yes
+		robot_liberator = no
+		propagator = no
+		multispecies = yes
+		crisis_fighter = yes
+		wants_tribute = yes
+		sneak_attacker = yes
+	}
+
+	allow = {
+		is_country_type = default
+		is_pacifist = no
+		is_socialism = yes
+		OR = {
+			is_industrial = yes
+			is_authoritarian = yes
+			has_trait = "trait_thrifty"
+		}
+	}
+
+	weight_modifier = {
+		weight = 300
+		modifier = {
+			factor = 2
+			OR = {
+				has_valid_civic = civic_police_state
+				has_valid_civic = civic_twisted_experimenters
+				has_valid_civic = civic_twisted_experimenters_corporate
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_valid_civic = civic_shared_burden
+				has_valid_civic = civic_labour_unions
+				has_valid_civic = civic_welfare_state
+				is_megaunion = yes
+			}
+		}
+		modifier = {
+			factor = 3
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_thrifty
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_industrious
+		}
+	}
+}
+
+humble_cooperative = {
+	aggressiveness = 0.5
+	trade_willingness = 1.0
+	bravery = 0.5
+	combat_bravery = 1.0
+
+	military_spending = 0.9
+	colony_spending = 1.1
+
+	federation_acceptance = 0 # 10
+	nap_acceptance = 20
+	commercial_pact_acceptance = 20
+	research_agreement_acceptance = 10
+	defensive_pact_acceptance = 0
+	migration_pact_acceptance = 20
+	loyalty_acceptance = 1.0
+
+	advanced_start_chance = 10
+
+	weapon_preferences = weapon_type_strike_craft
+	armor_ratio = 0.4
+	shields_ratio = 0.5
+	hull_ratio = 0.1
+
+	threat_modifier = 1.3
+	threat_others_modifier = 1.0
+	friction_modifier = 0.25
+	claims_modifier = 1.0
+
+	behaviour = {
+		conqueror = no
+		subjugator = no
+		liberator = yes
+		opportunist = yes
+		slaver = no
+		uplifter = yes
+		purger = no
+		displacer = no
+		infiltrator = no
+		dominator = no
+		robot_exploiter = no
+		robot_liberator = yes
+		propagator = no
+		multispecies = yes
+		crisis_fighter = yes
+		wants_tribute = yes
+	}
+
+	allow = {
+		is_country_type = default
+		is_socialism = yes
+		NOR = {
+			is_militarist = yes
+			is_xenophobe = yes			
+		}
+	}
+
+	weight_modifier = {
+		weight = 100
+		modifier = {
+			factor = 3
+			OR = {
+				has_valid_civic = civic_shared_burden
+				has_valid_civic = civic_labour_unions
+				has_valid_civic = civic_welfare_state
+				has_trait = "trait_thrifty"
+			}
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_valid_civic = civic_anarchy_ideals
+				has_valid_civic = civic_anarchy_utopia
+				has_valid_civic = civic_idealistic_foundation
+			}
+		}
+		modifier = {
+			factor = 3
+			is_xenophile = yes
+		}
+		modifier = {
+			factor = 2
+			is_megaunion = yes
+		}
+	}
+}

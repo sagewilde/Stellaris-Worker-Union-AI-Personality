@@ -1,0 +1,241 @@
+### Overwrites
+# Popular Front
+gov_popular_front = {
+	ruler_title = RT_PRESIDING_SPEAKING
+	should_force_rename = yes
+	possible = {
+		is_primitive = no
+		OR = {
+			is_worker_coop_empire = yes
+			has_valid_civic = civic_shared_burden
+			has_valid_civic = civic_anarchy_utopia
+		}
+		OR = {
+			has_valid_civic = civic_anarchy_ideals
+			has_valid_civic = civic_idealistic_foundation
+			has_origin = origin_broken_shackles
+		}
+	}
+	weight = {
+		base = 40000
+	}
+}
+
+# Megacorporation
+gov_megacorporation = {
+	ruler_title = RT_CEO
+	ruler_title_female = RT_CEO_FEMALE
+
+	should_force_rename = yes
+
+	possible = {
+		OR = {
+			AND = {
+				is_oligarchic_authority = yes
+				OR = {
+					is_capitalism = yes
+					NOR = {
+						is_socialism = yes
+						is_pacifist = yes
+					}
+				}
+				has_valid_civic = civic_state_monopoly
+			}
+			is_megacorp = yes
+		}
+	}
+
+	weight = {
+		base = 700
+	}
+}
+
+# Trade League
+gov_trade_league = {
+	ruler_title = RT_CHAIRMAN
+	ruler_title_female = RT_CHAIRWOMAN
+
+	should_force_rename = yes
+
+	possible = {
+		OR = {
+			AND = {
+				is_oligarchic_authority = yes
+				is_authoritarian = no
+				OR = {
+					is_egalitarian = yes
+					is_pacifist = yes
+				}
+				has_valid_civic = civic_corporate_dominion
+			}
+			AND = {
+				has_authority = auth_corporate
+				OR = {
+					has_valid_civic = civic_free_traders
+					has_valid_civic = civic_trading_posts
+				}
+			}
+		}
+	}
+
+	weight = {
+		base = 1200
+	}
+}
+
+# Subversive Cult
+gov_subversive_cult = {
+	ruler_title = RT_ORACLE
+
+	should_force_rename = yes
+
+	possible = {
+		has_authority = auth_corporate
+		has_valid_civic = civic_criminal_heritage
+		has_valid_civic = civic_gospel_of_the_masses
+	}
+
+	weight = {
+		base = 3000
+	}
+}
+
+# Communist Dictatorship
+gov_communist_dictatorship = {
+	ruler_title = RT_CHAIRMAN
+	ruler_title_female = RT_CHAIRMAN
+	possible = {
+		is_primitive = no
+		OR = {
+			is_dictatorial_authority = yes
+			is_megaunion = yes
+		}
+		has_ethic = ethic_authoritarian
+		has_valid_civic = civic_shared_burden
+	}
+	should_force_rename = yes
+	weight = {
+		base = 4000
+	}
+}
+
+### Original
+# MegaUnion
+gov_megaunion = {
+	ruler_title = RT_GENERAL_PRESIDENT
+	ruler_title_female = RT_GENERAL_PRESIDENT
+
+	should_force_rename = yes
+
+	possible = {
+		OR = {
+			AND = {
+				is_oligarchic_authority = yes
+				OR = {
+					is_socialism = yes
+					NOR = {
+						is_capitalism = yes
+						is_pacifist = yes
+					}
+				}
+				has_valid_civic = civic_labour_unions
+			}
+			is_megaunion = yes
+		}
+	}
+
+	weight = {
+		base = 700
+	}
+}
+
+gov_agricultural_cooperative = {
+	ruler_title = RT_CHARGEHAND
+	ruler_title_female = RT_CHARGEHAND
+
+	should_force_rename = yes
+
+	possible = {
+		OR = {
+			AND = {
+				is_oligarchic_authority = yes
+				OR = {
+					is_socialism = yes
+					NOR = {
+						is_capitalism = yes
+						is_pacifist = yes
+					}
+				}
+				has_valid_civic = civic_labour_unions
+			}
+			is_megaunion = yes
+		}
+		has_valid_civic = civic_agrarian_idyll
+	}
+
+	weight = {
+		base = 1000
+	}
+}
+
+gov_mineral_compact = {
+	ruler_title = RT_FOREMAN
+	ruler_title_female = RT_FOREMAN_WOMAN
+	should_force_rename = yes
+
+	possible = {
+		OR = {
+			AND = {
+				is_oligarchic_authority = yes
+				OR = {
+					is_socialism = yes
+					NOR = {
+						is_capitalism = yes
+						is_pacifist = yes
+					}
+				}
+				has_valid_civic = civic_labour_unions
+			}
+			is_megaunion = yes
+		}
+		has_valid_civic = civic_mining_guilds
+	}
+
+	weight = {
+		base = 1000
+	}
+}
+
+gov_fisher_guild = {
+	ruler_title = RT_FLEET_STEWARD
+	ruler_title_female = RT_FLEET_STEWARD
+
+	should_force_rename = yes
+
+	possible = {
+		OR = {
+			AND = {
+				is_oligarchic_authority = yes
+				OR = {
+					is_socialism = yes
+					NOR = {
+						is_capitalism = yes
+						is_pacifist = yes
+					}
+				}
+				has_valid_civic = civic_labour_unions
+			}
+			is_megaunion = yes
+		}
+		OR = {
+			has_valid_civic = civic_anglers
+			has_valid_civic = civic_corporate_anglers
+			has_valid_civic = civic_machine_anglers
+			has_valid_civic = civic_corporate_machine_anglers
+		}
+	}
+
+	weight = {
+		base = 1000
+	}
+}

@@ -1,0 +1,165 @@
+# Teian Seavoid Commune (Default)
+teian_seavoid_commune_1 = {
+	name = "EMPIRE_DESIGN_teian_seavoid_commune"
+	adjective = "PRESCRIPTED_adjective_teians"
+	spawn_enabled = yes
+	spawn_as_fallen = yes
+	ignore_portrait_duplication = no
+
+	playable = has_megacorp
+
+	flag = empire_teians
+
+	species = {
+		class="AQUATIC"
+		portrait="aqu4"
+		name = "PRESCRIPTED_species_teians"
+		plural = "PRESCRIPTED_species_plural_teians"
+		adjective = "PRESCRIPTED_species_adjective_teians"
+		name_list = "AQUATIC4"
+		gender = not_set
+		trait = "trait_organic"
+		trait = "trait_aquatic"
+		trait = "trait_communal"
+		trait = "trait_weak"
+	}
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_teians"	
+
+	planet_name = "PRESCRIPTED_planet_name_teians"
+	planet_class = "pc_ocean"
+	system_name = "PRESCRIPTED_system_name_teians"
+	initializer = ""
+
+	room = "aquatics_room"
+
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_xenophile"
+	ethic = "ethic_pacifist"
+	ethic = "ethic_fanatic_socialism"
+	authority = auth_corporate
+	government = gov_fisher_guild
+	civics = {
+		"civic_corporate_anglers"
+		"civic_shared_burden"
+		"civic_public_relations_specialists"
+	}
+	origin = "origin_here_be_dragons"
+
+	advisor_voice_type = "l_the_worker"
+	graphical_culture = "aquatic_01"
+	city_graphical_culture = "aquatic_01"
+
+	empire_flag = {
+		icon = {
+			category="aquatic"
+			file="aquatic_11.dds"
+		}
+		background = {
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors = {
+			"shadow_blue"
+			"intense_blue"
+			"black"
+			"null"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		gender = female
+		name = "PRESCRIPTED_ruler_name_teians"
+		portrait = "aqu4_f"
+		texture = 0
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = "official"
+	}
+}
+
+teian_seavoid_commune_2 = {
+	name = "EMPIRE_DESIGN_teian_seavoid_commune"
+	adjective = "PRESCRIPTED_adjective_teians"
+	spawn_enabled = yes
+	spawn_as_fallen = yes
+	ignore_portrait_duplication = no
+
+	playable = has_not_megacorp
+
+	flag = empire_teians
+
+	species = {
+		class="AQUATIC"
+		portrait="aqu4"
+		name = "PRESCRIPTED_species_teians"
+		plural = "PRESCRIPTED_species_plural_teians"
+		adjective = "PRESCRIPTED_species_adjective_teians"
+		name_list = "AQUATIC4"
+		gender = not_set
+		trait = "trait_organic"
+		trait = "trait_aquatic"
+		trait = "trait_communal"
+		trait = "trait_weak"
+	}
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_teians"	
+
+	planet_name = "PRESCRIPTED_planet_name_teians"
+	planet_class = "pc_ocean"
+	system_name = "PRESCRIPTED_system_name_teians"
+	initializer = ""
+
+	room = "aquatics_room"
+
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_xenophile"
+	ethic = "ethic_pacifist"
+	ethic = "ethic_fanatic_socialism"
+	authority = auth_oligarchic
+	government = gov_fisher_guild
+	civics = {
+		"civic_anglers"
+		"civic_labour_unions"
+		"civic_diplomatic_corps"
+	}
+	origin = "origin_here_be_dragons"
+
+	advisor_voice_type = "l_the_worker"
+	graphical_culture = "aquatic_01"
+	city_graphical_culture = "aquatic_01"
+
+	empire_flag=
+	{
+		icon = {
+			category="aquatic"
+			file="aquatic_11.dds"
+		}
+		background = {
+			category="backgrounds"
+			file="00_solid.dds"
+		}
+		colors = {
+			"shadow_blue"
+			"intense_blue"
+			"black"
+			"null"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		gender = female
+		name = "PRESCRIPTED_ruler_name_teians"
+		portrait = "aqu4_f"
+		texture = 0
+		evolution_mask = 0
+		attachment = 0
+		clothes = 0
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = "official"
+	}
+}

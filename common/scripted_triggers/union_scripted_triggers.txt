@@ -1,0 +1,108 @@
+### Mod Identifier
+
+has_megaunion_ai_personalities = { always = yes }
+has_sage_expressive_personalities = { always = yes }
+
+### Vanilla Overwrites
+is_megacorp = {
+	has_authority = auth_corporate
+	is_capitalism = yes
+}
+
+has_corporate_government = {
+	OR = {
+		is_megacorp = yes
+		is_megaunion = yes
+		has_civic = civic_galactic_sovereign_megacorp
+	}
+}
+
+has_federator_personality = {
+	OR = {
+		has_ai_personality = federation_builders
+		has_ai_personality = spiritual_seekers
+		has_ai_personality = migrating_flock
+		has_ai_personality = peaceful_traders
+		has_ai_personality = hive_mind_friend
+		has_ai_personality = peaceful_counterculture
+		has_ai_personality = humble_cooperative
+	}
+}
+
+has_ambush_doctrine_personality = {
+	OR = {
+		has_ai_personality = erudite_explorers
+		has_ai_personality = ruthless_capitalists
+		has_ai_personality = slaving_despots
+		has_ai_personality = decadent_capitalists
+		has_ai_personality = mirthful_bandits
+		has_ai_personality = cynical_socialists
+	}
+}
+
+has_strike_wing_doctrine_personality = {
+	OR = {
+		has_ai_personality = peaceful_traders
+		has_ai_personality = migrating_flock
+		has_ai_personality = hive_mind_friend
+		has_ai_personality = fanatic_befrienders
+		has_ai_personality = benevolent_wilderness
+		has_ai_personality = devouring_swarm
+		has_ai_personality = humble_cooperative
+	}
+}
+
+# Unions
+is_special_personality = {
+	OR = {
+		has_ai_personality = peaceful_counterculture
+		has_ai_personality = mirthful_bandits
+		has_ai_personality = cunning_raiders
+	}
+}
+
+is_megaunion = {
+	has_authority = auth_corporate
+	is_socialism = yes
+}
+
+is_socialist_government = {
+	OR = {
+		has_government = gov_trade_union_corporate
+		has_government = gov_communist_dictatorship
+		has_government = gov_anarchy_communism
+		has_government = gov_popular_front
+		has_government = gov_worker_coop
+	}
+}
+
+is_fascist = {
+	OR = {
+		has_government = gov_national_socialism
+		has_government = gov_jingoism
+		AND = {
+			has_ethic = ethic_fanatic_authoritarian
+			is_capitalism = yes
+			OR = {
+				is_militarist = yes
+				is_xenophobe = yes
+			}
+		}
+	}
+}
+
+is_anti_fascist = {
+	OR = {
+		has_government = gov_anarchy_state
+		has_government = gov_anarchy_communism
+		has_government = gov_popular_front
+		AND = {
+			has_ethic = ethic_fanatic_egalitarian
+			is_socialism = yes
+			OR = {
+				is_militarist = yes
+				is_xenophile = yes
+			}
+		}
+	}
+}
