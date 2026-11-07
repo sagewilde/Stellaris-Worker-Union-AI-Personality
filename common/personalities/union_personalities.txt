@@ -59,7 +59,7 @@ cynical_socialists = {
 	}
 
 	weight_modifier = {
-		weight = 300
+		weight = 30
 		modifier = {
 			factor = 2
 			OR = {
@@ -145,36 +145,36 @@ humble_cooperative = {
 		is_socialism = yes
 		NOR = {
 			is_militarist = yes
-			is_xenophobe = yes			
+			is_xenophobe = yes
 		}
+		NOT = { has_murderous_civic_or_origin = yes }
 	}
 
 	weight_modifier = {
-		weight = 100
+		weight = 4
 		modifier = {
-			factor = 3
+			factor = 100
+			OR = {
+				is_megaunion = yes
+				has_ethic = "ethic_fanatic_socialism"
+			}
+		}
+		modifier = {
+			factor = 10
 			OR = {
 				has_valid_civic = civic_shared_burden
-				has_valid_civic = civic_labour_unions
-				has_valid_civic = civic_welfare_state
-				has_trait = "trait_thrifty"
-			}
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				has_valid_civic = civic_anarchy_ideals
 				has_valid_civic = civic_anarchy_utopia
-				has_valid_civic = civic_idealistic_foundation
+				has_valid_civic = civic_worker_coop
 			}
-		}
-		modifier = {
-			factor = 3
-			is_xenophile = yes
 		}
 		modifier = {
 			factor = 2
-			is_megaunion = yes
+			OR = {
+				has_valid_civic = civic_anarchy_ideals
+				has_valid_civic = civic_idealistic_foundation
+				has_valid_civic = civic_welfare_state
+				has_valid_civic = civic_labour_unions
+			}
 		}
 	}
 }
