@@ -54,40 +54,57 @@ cynical_socialists = {
 		OR = {
 			is_industrial = yes
 			is_authoritarian = yes
-			has_trait = "trait_thrifty"
+			has_trait = "trait_communal"
 		}
 	}
 
 	weight_modifier = {
-		weight = 30
+		weight = 10
 		modifier = {
-			factor = 2
+			add = 500
 			OR = {
+				is_megaunion = yes
+				has_ethic = "ethic_fanatic_socialism"
+			}
+		}
+		modifier = {
+			add = 100
+			OR = {
+				has_valid_civic = civic_shared_burden
+				has_valid_civic = civic_labour_unions
+				has_valid_civic = civic_welfare_state
+			}
+		}
+		modifier = {
+			add = 25
+			OR = {
+				has_valid_civic = civic_dystopian_society
 				has_valid_civic = civic_police_state
 				has_valid_civic = civic_twisted_experimenters
 				has_valid_civic = civic_twisted_experimenters_corporate
 			}
 		}
 		modifier = {
-			factor = 2
+			add = 5
 			OR = {
-				has_valid_civic = civic_shared_burden
-				has_valid_civic = civic_labour_unions
-				has_valid_civic = civic_welfare_state
-				is_megaunion = yes
+				has_trait = trait_communal
+				has_trait = trait_robot_double_jointed
+				has_trait = trait_robot_history_resourcebot
 			}
 		}
 		modifier = {
-			factor = 3
-			is_militarist = yes
+			add = -5
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_robot_trading_algorithms
+			}
 		}
 		modifier = {
-			factor = 2
-			has_trait = trait_thrifty
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_industrious
+			add = -5
+			OR = {
+				has_trait = trait_wasteful
+				has_trait = trait_robot_wasteful
+			}
 		}
 	}
 }
@@ -151,16 +168,16 @@ humble_cooperative = {
 	}
 
 	weight_modifier = {
-		weight = 4
+		weight = 10
 		modifier = {
-			factor = 100
+			add = 500
 			OR = {
 				is_megaunion = yes
 				has_ethic = "ethic_fanatic_socialism"
 			}
 		}
 		modifier = {
-			factor = 10
+			add = 50
 			OR = {
 				has_valid_civic = civic_shared_burden
 				has_valid_civic = civic_anarchy_utopia
@@ -168,12 +185,34 @@ humble_cooperative = {
 			}
 		}
 		modifier = {
-			factor = 2
+			add = 10
 			OR = {
 				has_valid_civic = civic_anarchy_ideals
 				has_valid_civic = civic_idealistic_foundation
 				has_valid_civic = civic_welfare_state
 				has_valid_civic = civic_labour_unions
+			}
+		}
+		modifier = {
+			add = 5
+			OR = {
+				has_trait = trait_communal
+				has_trait = trait_robot_double_jointed
+				has_trait = trait_robot_history_resourcebot
+			}
+		}
+		modifier = {
+			add = -5
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_robot_trading_algorithms
+			}
+		}
+		modifier = {
+			add = -5
+			OR = {
+				has_trait = trait_wasteful
+				has_trait = trait_robot_wasteful
 			}
 		}
 	}

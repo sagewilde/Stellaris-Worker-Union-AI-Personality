@@ -80,7 +80,7 @@ teian_seavoid_commune_1 = {
 		leader_class = "official"
 	}
 }
-
+# Teian Seavoid Commune (No MegaCorp)
 teian_seavoid_commune_2 = {
 	name = "EMPIRE_DESIGN_teian_seavoid_commune"
 	adjective = "PRESCRIPTED_adjective_teians"
@@ -128,7 +128,6 @@ teian_seavoid_commune_2 = {
 	}
 	origin = "origin_here_be_dragons"
 
-	advisor_voice_type = "l_the_worker"
 	graphical_culture = "aquatic_01"
 	city_graphical_culture = "aquatic_01"
 
