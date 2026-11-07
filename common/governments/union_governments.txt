@@ -13,6 +13,7 @@ gov_popular_front = {
 		OR = {
 			has_valid_civic = civic_anarchy_ideals
 			has_valid_civic = civic_idealistic_foundation
+			has_valid_civic = civic_parliamentary_system
 			has_origin = origin_broken_shackles
 		}
 	}
