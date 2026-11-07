@@ -1,6 +1,6 @@
 action_make_rival = {
 	select = {
-		PC_MAKE_RIVAL_SELECT = {
+		UNION_MAKE_RIVAL_SELECT = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -179,7 +179,7 @@ action_make_rival = {
 
 action_end_rivalry = {
 	select = {
-		PC_END_RIVAL_SELECT = {
+		UNION_END_RIVAL_SELECT = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -336,7 +336,7 @@ action_end_rivalry = {
 		}
 	}
 	accept = {
-		# Hippies to Default
+		# Unions to Default
 		UNION_END_RIVALRY_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
@@ -371,7 +371,7 @@ action_end_rivalry = {
 action_declare_war = {
 	propose = {
 		# Generic
-		PC_DOW_PROPOSE_01 = {
+		UNION_DOW_PROPOSE_01 = {
 			weight = { weight = 10000 }
 			trigger = {
 				FROM = {
@@ -380,7 +380,7 @@ action_declare_war = {
 			}
 		}
 		# Crisis or Homicidal
-		PC_DOW_PROPOSE_02 = {
+		UNION_DOW_PROPOSE_02 = {
 			weight = { weight = 10000 }
 			trigger = {
 				FROM = {
@@ -393,7 +393,7 @@ action_declare_war = {
 			}
 		}
 		# Subject
-		PC_VASSAL_DOW_PROPOSE = {
+		UNION_VASSAL_DOW_PROPOSE = {
 			weight = { weight = 10000 }
 			trigger = {
 				is_megaunion = yes
@@ -406,24 +406,15 @@ action_declare_war = {
 	}
 	accept = {
 		# Generic
-		PC_DOW_ACCEPT = {
+		UNION_DOW_ACCEPT = {
 			weight = { weight = 1000 }
 			trigger = {
 				is_megaunion = yes
 			}
 		}
-		# Unlocked Global Pacifier
-		PC_DOW_ACCEPT_PK = {
-			weight = { weight = 1000 }
-			trigger = {
-				AND = {
-					is_megaunion = yes
-				}
-			}
-		}
 	}
 	propose_vote = {
-		PC_DOW_VOTE_PROPOSE = {
+		UNION_DOW_VOTE_PROPOSE = {
 			weight = { weight = 1000 }
 			trigger = {
 				from = { is_megaunion = yes }
@@ -434,7 +425,7 @@ action_declare_war = {
 
 action_offer_peace = {
 	consider = {
-		PC_CONSIDER = {
+		UNION_CONSIDER = {
 			weight = { weight = 100 }
 			trigger = {
 				is_megaunion = yes
@@ -443,7 +434,7 @@ action_offer_peace = {
 	}
 	propose = {
 		# Generic Empires
-		PC_PEACE_PROPOSE_01 = {
+		UNION_PEACE_PROPOSE_01 = {
 			weight = { weight = 1000 }
 			trigger = {
 				from = {
@@ -452,78 +443,55 @@ action_offer_peace = {
 			}
 		}
 		# Plants
-		PC_PEACE_PROPOSE_02 = {
+		UNION_PEACE_PROPOSE_02 = {
 			weight = { weight = 1000 }
 			trigger = {
-				OR = {
-					is_species_class = FUN
-					is_species_class = PLANT
-				}
+				is_megacorp = yes
 				from = {
 					is_megaunion = yes
 				}
 			}
 		}
-		# Peace with Humans
-		PC_PEACE_PROPOSE_03 = {
+		# Socialists
+		UNION_PEACE_PROPOSE_03 = {
 			weight = { weight = 1000 }
 			trigger = {
-				is_human_species = yes 
+				is_socialism = yes 
 				from = {
 					is_megaunion = yes
 				}
 			}
 		}
-		# Hippie-Haters
-		PC_PEACE_PROPOSE_04 = {
+		# Fascists
+		UNION_PEACE_PROPOSE_04 = {
 			weight = { weight = 1000 }
 			trigger = {
-				is_anti_hippie = yes
+				is_fascist = yes
 				from = {
 					is_megaunion = yes
-				}
-			}
-		}
-		# Global Pacifier Unlocked
-		PC_PEACE_PROPOSE_PK = {
-			weight = { weight = 10000 }
-			trigger = {
-				FROM = {
-					AND = {
-						is_megaunion = yes
-					}
 				}
 			}
 		}
 	}
 	accept = {
 		# Generic Empires
-		PC_PEACE_ACCEPT_01 = {
+		UNION_PEACE_ACCEPT_01 = {
 			weight = { weight = 1000 }
 			trigger = {
 				is_megaunion = yes
 			}
 		}
-		# Peace with Humans
-		PC_PEACE_ACCEPT_02 = {
+		# Socialists
+		UNION_PEACE_ACCEPT_02 = {
 			weight = { weight = 1000 }
 			trigger = {
 				is_megaunion = yes
-				FROM = { is_human_species = yes	}
-			}
-		}
-		# Global Pacifier Unlocked
-		PC_PEACE_ACCEPT_PK = {
-			weight = { weight = 10000 }
-			trigger = {
-				AND = {
-					is_megaunion = yes
-				}
+				FROM = { is_socialism = yes	}
 			}
 		}
 	}
 	refuse = {
-		PC_PEACE_REFUSE = {
+		UNION_PEACE_REFUSE = {
 			weight = { weight = 1000 }
 			trigger = {
 				is_megaunion = yes
