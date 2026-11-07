@@ -212,7 +212,7 @@ greetings = {
 		}
 	}
 	# Humble Co-Operative
-	HC_HOSTILE_GREETING_01 = {
+	HCOOP_HOSTILE_GREETING_01 = {
 		weight = {
 			weight = 3
 		}
@@ -225,7 +225,7 @@ greetings = {
 			}
 		}
 	}
-	HC_HOSTILE_GREETING_02 = {
+	HCOOP_HOSTILE_GREETING_02 = {
 		weight = {
 			weight = 3
 		}
@@ -239,7 +239,7 @@ greetings = {
 			}
 		}
 	}
-	HC_HOSTILE_GREETING_03 = {
+	HCOOP_HOSTILE_GREETING_03 = {
 		weight = {
 			weight = 3
 		}
@@ -253,7 +253,7 @@ greetings = {
 			}
 		}
 	}
-	HC_DOMINEERING_GREETING_01 = {
+	HCOOP_DOMINEERING_GREETING_01 = {
 		weight = {
 			weight = 3
 		}
@@ -265,7 +265,7 @@ greetings = {
 			}
 		}
 	}
-	HC_NEUTRAL_GREETING_01 = {
+	HCOOP_NEUTRAL_GREETING_01 = {
 		weight = {
 			weight = 3
 		}
@@ -275,7 +275,7 @@ greetings = {
 			is_neutral_to = FROM
 		}
 	}
-	HC_NEUTRAL_GREETING_02 = {
+	HCOOP_NEUTRAL_GREETING_02 = {
 		weight = {
 			weight = 3
 		}
@@ -286,7 +286,7 @@ greetings = {
 			is_neutral_to = FROM
 		}
 	}
-	HC_NEUTRAL_GREETING_03 = {
+	HCOOP_NEUTRAL_GREETING_03 = {
 		weight = {
 			weight = 3
 		}
@@ -297,7 +297,7 @@ greetings = {
 			is_neutral_to = FROM
 		}
 	}
-	HC_THREATENED_GREETING_01 = {
+	HCOOP_THREATENED_GREETING_01 = {
 		weight = {
 			weight = 3
 		}
@@ -307,7 +307,7 @@ greetings = {
 			is_threatened_to = FROM
 		}
 	}
-	HC_FRIENDLY_GREETING_01 = {
+	HCOOP_FRIENDLY_GREETING_01 = {
 		weight = {
 			weight = 3
 		}
@@ -321,7 +321,7 @@ greetings = {
 			}
 		}
 	}
-	HC_FRIENDLY_GREETING_02 = {
+	HCOOP_FRIENDLY_GREETING_02 = {
 		weight = {
 			weight = 3
 		}
@@ -336,7 +336,7 @@ greetings = {
 			FROM = { is_machine_empire = no }
 		}
 	}
-	HC_FRIENDLY_GREETING_03 = {
+	HCOOP_FRIENDLY_GREETING_03 = {
 		weight = {
 			weight = 3
 		}
@@ -351,7 +351,7 @@ greetings = {
 			}
 		}
 	}
-	HC_WAR_GREETING_01 = {
+	HCOOP_WAR_GREETING_01 = {
 		weight = {
 			weight = 3
 		}
@@ -360,7 +360,7 @@ greetings = {
 			is_at_war_with = FROM
 		}
 	}
-	HC_WAR_GREETING_02 = {
+	HCOOP_WAR_GREETING_02 = {
 		weight = {
 			weight = 3
 		}
@@ -369,7 +369,7 @@ greetings = {
 			is_at_war_with = FROM
 		}
 	}
-	HC_WAR_GREETING_03 = {
+	HCOOP_WAR_GREETING_03 = {
 		weight = {
 			weight = 3
 		}
@@ -378,7 +378,7 @@ greetings = {
 			is_at_war_with = FROM
 		}
 	}
-	HC_VASSAL_GREETING_01 = {
+	HCOOP_VASSAL_GREETING_01 = {
 		weight = {
 			weight = 10
 		}
@@ -390,7 +390,7 @@ greetings = {
 			NOT = { is_disloyal_to = FROM }
 		}
 	}
-	HC_VASSAL_GREETING_DISLOYAL_01 = {
+	HCOOP_VASSAL_GREETING_DISLOYAL_01 = {
 		weight = {
 			weight = 10
 		}
