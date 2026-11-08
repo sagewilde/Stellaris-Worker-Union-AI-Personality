@@ -387,8 +387,8 @@ action_declare_war = {
 					is_megaunion = yes
 				}
 				OR = { 
-					has_crisis_level = crisis_level_5
-					is_homicidal = yes
+					is_capitalist = yes
+					is_fascist = yes
 				}
 			}
 		}

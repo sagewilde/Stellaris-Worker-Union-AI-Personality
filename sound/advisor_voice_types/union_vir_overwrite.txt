@@ -1,0 +1,116 @@
+l_evil_corp = {
+	name = "vo_evil_corp"
+	icon = "gfx/interface/icons/advisor_vo/vo_evil_corp.dds"
+
+	playable = {
+		local_has_dlc = "Megacorp"
+	}
+
+	weight = {
+		base = 0
+		modifier = {
+			add = 2
+			is_capitalism = yes
+			OR = {
+				is_egalitarian = no
+				is_xenophile = no
+				is_pacifist = no
+			}
+		}
+		modifier = {
+			add = 4
+			is_capitalism = yes
+			OR = {
+				is_militarist = yes
+				is_xenophobe = yes
+				is_authoritarian = yes
+			}
+		}
+		modifier = {
+			add = 4
+			OR = {
+				has_valid_civic = civic_criminal_heritage
+				has_valid_civic = civic_indentured_assets
+				has_valid_civic = civic_private_military_companies
+			}
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = chinorr_combine
+		}
+	}
+}
+
+l_slick_corp = {
+	name = "vo_slick_corp"
+	icon = "gfx/interface/icons/advisor_vo/vo_slick_corp.dds"
+
+	playable = {
+		local_has_dlc = "Megacorp"
+	}
+
+	weight = {
+		base = 0
+		modifier = {
+			add = 2
+			is_capitalism = yes
+			OR = {
+				is_authoritarian = no
+				is_xenophobe = no
+				is_militarist = no
+			}
+		}
+		modifier = {
+			add = 4
+			is_capitalism = yes
+			OR = {
+				is_egalitarian = yes
+				is_xenophile = yes
+				is_pacifist = yes
+			}
+		}
+		modifier = {
+			add = 4
+			OR = {
+				has_valid_civic = civic_brand_loyalty
+				has_valid_civic = civic_franchising
+				has_valid_civic = civic_media_conglomerate
+			}
+		}
+	}
+}
+
+l_the_worker = {
+	name = "vo_the_worker"
+	icon = "gfx/interface/icons/advisor_vo/vo_the_worker.dds"
+
+	playable = {
+		local_has_dlc = "Megacorp"
+	}
+
+	weight = {
+		base = 0
+		modifier = {
+			add = 2
+			has_ethic = ethic_socialism
+		}
+		modifier = {
+			add = 4
+			has_ethic = ethic_fanatic_socialism
+		}
+		modifier = {
+			add = 8
+			OR = {
+				is_megaunion = yes
+				has_valid_civic = civic_shared_burden
+				is_worker_coop_empire = yes
+			}
+		}
+		modifier = {
+			factor = 100
+			OR = {
+				has_country_flag = teians
+			}
+		}
+	}
+}

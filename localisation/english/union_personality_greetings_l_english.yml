@@ -34,5 +34,5 @@
  HCOOP_WAR_GREETING_01:0 "As long as the labor - and the lives - of [From.GetSpeciesAdj] workers remain articles of sale, of exploitation, the 'sacredness of [From.GetSpeciesAdj] life' remains a shameful lie."
  HCOOP_WAR_GREETING_02:0 "The [Root.GetAdj] armed forces are joyful defenders of our way of life, and they shall fight to the last!"
  HCOOP_WAR_GREETING_03:0 "Money cannot buy honor in the eyes of history. Only the blood of martyrs will satisfy the price."
- HCOOP_VASSAL_GREETING_01:0 "Service to our fellow xenos always has been and always shall be the pride and joy of the [Root.GetName]."
+ HCOOP_VASSAL_GREETING_01:0 "Commerce is the flow of social energy, and it follows the path of greatest efficiency. Our cooperation with the [From.GetName] continues to be efficient."
  HCOOP_VASSAL_GREETING_DISLOYAL_01:0 "The art of peace only flourishes through understanding the science of war. And we have many, many scientists."

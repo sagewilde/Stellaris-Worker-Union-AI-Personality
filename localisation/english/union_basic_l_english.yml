@@ -7,7 +7,7 @@
  personality_humble_cooperative_desc:0 "Humble Co-Operatives are chiefly concerned with the economic welfare of their citizens. Their economic model typically centers around equitable distribution initiatives managed by grassroots labour councils."
 
  gov_megaunion:0 "MegaUnion"
- gov_megaunion_desc:0 "A MegaUnion is a labour oligarchy, where representatives of various workers' unions have in turn formed their own over-arching union. This collossal economic juggernaut is overseen by a committee of elected stewards."
+ gov_megaunion_desc:0 "A MegaUnion is a labor oligarchy, where representatives of various workers' unions have in turn formed their own over-arching union. This collossal economic juggernaut is overseen by a committee of elected stewards."
  gov_agricultural_cooperative:0 "Agricultural Co-Operative"
  gov_agricultural_cooperative_desc:0 "This MegaUnion consolidated power through controlling the agricultural industry, and to this day places high value on farming and food production."
  gov_mineral_compact:0 "Mineral Compact"
@@ -27,7 +27,7 @@
  PRESCRIPTED_species_adjective_teians: "Hiloan $1$"
  PRESCRIPTED_planet_name_teians: "Hilo"
  PRESCRIPTED_system_name_teians: "Teia"
- PRESCRIPTED_ruler_name_teians: "$HUM1_CHR_Tirrana$"
+ PRESCRIPTED_ruler_name_teians: "Archana Greentide"
  PRESCRIPTED_adjective_teians: "Teian"
  EMPIRE_DESIGN_teian_seavoid_commune_1:0 "$EMPIRE_DESIGN_teian_seavoid_commune$"
  EMPIRE_DESIGN_teian_seavoid_commune_1_desc:0 "$EMPIRE_DESIGN_teian_seavoid_commune_desc$"
