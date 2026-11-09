@@ -6,18 +6,18 @@
 
 action_offer_trade_deal = {
 	propose = {
-		UNION_OFFER_TRADE_DEAL_PROPOSE_1 = {
+		UNION_OFFER_TRADE_DEAL_PROPOSE_01 = {
 			only_for_trade = yes
 			weight = { weight = 100 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
-		UNION_OFFER_TRADE_DEAL_PROPOSE_2 = {
+		UNION_OFFER_TRADE_DEAL_PROPOSE_02 = {
 			only_for_trade = yes
 			weight = { weight = 100 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 		UNION_OFFER_TRADE_DEAL_PROPOSE_3 = {
@@ -25,19 +25,19 @@ action_offer_trade_deal = {
 			weight = { weight = 100 }
 			trigger = {
 				is_machine_empire = yes
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 		UNION_OFFER_TRADE_DEAL_PROPOSE_4 = {
 			only_for_trade = yes
 			weight = { weight = 100 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
 	accept = {
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_1 = {
+		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_01 = {
 			only_for_gift = yes
 			weight = { weight = 100 }
 			trigger = {
@@ -49,7 +49,7 @@ action_offer_trade_deal = {
 				}
 			}
 		}
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_2 = {
+		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_02 = {
 			only_for_gift = yes
 			weight = { weight = 100 }
 			trigger = {
@@ -61,7 +61,7 @@ action_offer_trade_deal = {
 				}
 			}
 		}
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_HOSTILE_1 = {
+		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_HOSTILE_01 = {
 			only_for_gift = yes
 			weight = { weight = 100 }
 			trigger = {
@@ -73,7 +73,7 @@ action_offer_trade_deal = {
 				}
 			}
 		}
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_HOSTILE_2 = {
+		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_HOSTILE_02 = {
 			only_for_gift = yes
 			trigger = {
 				NOR = {
@@ -88,7 +88,7 @@ action_offer_trade_deal = {
 				}
 			}
 		}
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_BW_1 = {
+		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_BW_01 = {
 			only_for_gift = yes
 			weight = { weight = 100 }
 			trigger = {
@@ -100,7 +100,7 @@ action_offer_trade_deal = {
 				}
 			}
 		}
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_BW_2 = {
+		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_BW_02 = {
 			only_for_gift = yes
 			weight = { weight = 100 }
 			trigger = {
@@ -178,7 +178,7 @@ action_form_defensive_pact = {
 		UNION_FORM_DP_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -213,7 +213,7 @@ action_break_defensive_pact = {
 		UNION_BREAK_DP_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -251,14 +251,14 @@ action_form_non_aggression_pact = {
 			weight = { weight = 50 }
 			trigger = {
 				NOT = { is_fascist = yes }
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 		UNION_FORM_NAP_PROPOSE_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_fascist = yes
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -294,7 +294,7 @@ action_break_non_aggression_pact = {
 		UNION_BREAK_NAP_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -323,7 +323,7 @@ action_guarantee_independence = {
 		UNION_GUARANTEE_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -352,7 +352,7 @@ action_break_guarantee = {
 		UNION_REVOKE_GUARANTEE_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -395,7 +395,7 @@ action_support_independence = {
 		UNION_SUPPORT_INDEPENDENCE_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = {
+				FROM = {
 					is_megaunion = yes
 				}
 			}
@@ -450,7 +450,7 @@ action_break_support = {
 		UNION_REVOKE_INDEPENDENCE_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = {
+				FROM = {
 					is_megaunion = yes
 				}
 			}
@@ -500,7 +500,7 @@ action_form_migration_pact = {
 		UNION_FORM_MIGRATION_PACT_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -535,7 +535,7 @@ action_break_migration_pact = {
 		UNION_BREAK_MIGRATION_PACT_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -562,7 +562,7 @@ action_open_borders = {
 		UNION_OPEN_BORDERS_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -589,7 +589,7 @@ action_close_borders = {
 		UNION_CLOSE_BORDERS_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -615,7 +615,7 @@ action_invite_to_federation = {
 		}
 	}
 	select = {
-		UNION_ITOA_SELECT_1 = {
+		UNION_ITOA_SELECT_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -624,7 +624,7 @@ action_invite_to_federation = {
 				}
 			}
 		}
-		UNION_ITOA_SELECT_2 = {
+		UNION_ITOA_SELECT_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -635,27 +635,95 @@ action_invite_to_federation = {
 		}
 	}
 	propose = {
-		UNION_ITOA_PROPOSE_1 = {
+		UNION_ITOA_PROPOSE_01 = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { 
+				FROM = { 
 					has_federation = yes
 					is_megaunion = yes 
 				}
+				NOR = {
+					is_megaunion = yes
+					is_megacorp = yes
+				}
 			}
 		}
-		UNION_ITOA_PROPOSE_2 = {
+		UNION_ITOA_PROPOSE_02 = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { 
+				FROM = { 
 					has_federation = no
 					is_megaunion = yes 
 				}
+				NOR = {
+					is_megaunion = yes
+					is_megacorp = yes
+				}
+			}
+		}
+		UNION_CORP_ITOA_PROPOSE_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = { 
+					has_federation = yes
+					is_megaunion = yes 
+				}
+				is_megacorp = yes
+			}
+		}
+		UNION_CORP_ITOA_PROPOSE_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = { 
+					has_federation = no
+					is_megaunion = yes 
+				}
+				is_megacorp = yes
+			}
+		}
+		CORP_UNION_ITOA_PROPOSE_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = { 
+					has_federation = yes
+					is_megacorp = yes 
+				}
+				is_megaunion = yes
+			}
+		}
+		CORP_UNION_ITOA_PROPOSE_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = { 
+					has_federation = no
+					is_megacorp = yes 
+				}
+				is_megaunion = yes
+			}
+		}
+		UNION_UNION_ITOA_PROPOSE_01 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = { 
+					has_federation = yes
+					is_megaunion = yes 
+				}
+				is_megaunion = yes
+			}
+		}
+		UNION_UNION_ITOA_PROPOSE_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = { 
+					has_federation = no
+					is_megaunion = yes 
+				}
+				is_megaunion = yes
 			}
 		}
 	}
 	accept = {
-		UNION_ITOA_ACCEPT_1 = {
+		UNION_ITOA_ACCEPT_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -664,7 +732,7 @@ action_invite_to_federation = {
 				}
 			}
 		}
-		UNION_ITOA_ACCEPT_2 = {
+		UNION_ITOA_ACCEPT_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -675,7 +743,7 @@ action_invite_to_federation = {
 		}
 	}
 	refuse = {
-		UNION_ITOA_REFUSE_1 = {
+		UNION_ITOA_REFUSE_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -684,7 +752,7 @@ action_invite_to_federation = {
 				}
 			}
 		}
-		UNION_ITOA_REFUSE_2 = {
+		UNION_ITOA_REFUSE_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -717,7 +785,7 @@ action_ask_to_join_federation = {
 		UNION_ASK_TO_JOIN_A_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -760,7 +828,7 @@ action_leave_federation = {
 		UNION_LEAVE_A_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -774,7 +842,7 @@ action_leave_federation = {
 	}
 }
 
-action_kick_from_federation = {
+action_kick_FROM_federation = {
 	select = {
 		UNION_KICK_FROM_ALLIANCE_SELECT = {
 			weight = { weight = 50 }
@@ -787,7 +855,7 @@ action_kick_from_federation = {
 		UNION_KICK_FROM_ALLIANCE_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -822,7 +890,7 @@ action_offer_federation_association_status = {
 		UNION_OFFER_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -857,7 +925,7 @@ action_revoke_federation_association_status = {
 		UNION_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -892,7 +960,7 @@ action_ask_for_federation_association_status = {
 		UNION_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -927,7 +995,7 @@ action_end_federation_association_status = {
 		UNION_END_FEDERATION_ASSOCIATION_STATUS_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -954,7 +1022,7 @@ action_ask_to_leave_federation = {
 		UNION_LEAVE_A_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -981,7 +1049,7 @@ action_demand_subjugation = {
 	}
 	select = {
 		# Vassalization Select
-		 UNION_DEMAND_VASS_SELECT_1 = {
+		 UNION_DEMAND_VASS_SELECT_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -993,7 +1061,7 @@ action_demand_subjugation = {
 			}
 		}
 		# Vassalization Select (Hostile)
-		UNION_DEMAND_VASS_SELECT_2 = {
+		UNION_DEMAND_VASS_SELECT_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1009,20 +1077,20 @@ action_demand_subjugation = {
 		UNION_DEMAND_VASS_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
 	accept = {
 		# Accept
-		UNION_DEMAND_VASS_ACCEPT_1 = {
+		UNION_DEMAND_VASS_ACCEPT_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
 			}
 		}
 		# Accept Wilderness
-		UNION_DEMAND_VASS_ACCEPT_2 = {
+		UNION_DEMAND_VASS_ACCEPT_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -1037,7 +1105,7 @@ action_demand_subjugation = {
 	}
 	refuse = {
 		# Refuse
-		UNION_DEMAND_VASS_REFUSE_1 = {
+		UNION_DEMAND_VASS_REFUSE_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1049,7 +1117,7 @@ action_demand_subjugation = {
 			}
 		}
 		# Refuse Hostile
-		UNION_DEMAND_VASS_REFUSE_2 = {
+		UNION_DEMAND_VASS_REFUSE_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1084,7 +1152,7 @@ action_ask_to_become_subjugated = {
 		UNION_ASK_FOR_VASS_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -1117,7 +1185,7 @@ action_demand_subsidiary = {
 	}
 	select = {
 		# Tankies
-		UNION_DEMAND_SUBS_SELECT_1 = {
+		UNION_DEMAND_SUBS_SELECT_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1125,7 +1193,7 @@ action_demand_subsidiary = {
 			}
 		}
 		# Capitalists
-		UNION_DEMAND_SUBS_SELECT_2 = {
+		UNION_DEMAND_SUBS_SELECT_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1134,16 +1202,22 @@ action_demand_subsidiary = {
 		}
 	}
 	propose = {
-		UNION_DEMAND_VASS_PROPOSE = {
+		UNION_DEMAND_VASS_PROPOSE_01 = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
+			}
+		}
+		UNION_DEMAND_VASS_PROPOSE_02 = {
+			weight = { weight = 50 }
+			trigger = {
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
 	accept = {
 		# Tankies
-		UNION_DEMAND_SUBS_ACCEPT_1 = {
+		UNION_DEMAND_SUBS_ACCEPT_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1151,7 +1225,7 @@ action_demand_subsidiary = {
 			}
 		}
 		# Capitalists
-		UNION_DEMAND_SUBS_ACCEPT_2 = {
+		UNION_DEMAND_SUBS_ACCEPT_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1161,7 +1235,7 @@ action_demand_subsidiary = {
 	}
 	refuse = {
 		# Tankies
-		UNION_DEMAND_SUBS_REFUSE_1 = {
+		UNION_DEMAND_SUBS_REFUSE_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1169,7 +1243,7 @@ action_demand_subsidiary = {
 			}
 		}
 		# Capitalists
-		UNION_DEMAND_SUBS_REFUSE_2 = {
+		UNION_DEMAND_SUBS_REFUSE_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1198,7 +1272,7 @@ action_ask_to_become_subsidiary = {
 	}
 	propose = {
 		# Tankies
-		UNION_ASK_FOR_SUBS_PROPOSE_1 = {
+		UNION_ASK_FOR_SUBS_PROPOSE_01 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1206,7 +1280,7 @@ action_ask_to_become_subsidiary = {
 			}
 		}
 		# Capitalists
-		UNION_ASK_FOR_SUBS_PROPOSE_2 = {
+		UNION_ASK_FOR_SUBS_PROPOSE_02 = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
@@ -1245,7 +1319,7 @@ action_release_subject = {
 		UNION_RELEASE_SUBJECT_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -1280,7 +1354,7 @@ action_ask_to_be_released_subject = {
 		UNION_ASK_TO_BE_RELEASED_SUBJECT_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -1323,7 +1397,7 @@ action_demand_tributary = {
 		UNION_DEMAND_VASS_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -1366,7 +1440,7 @@ action_ask_to_become_tributary = {
 		UNION_ASK_BECOME_TRIBUTARY_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -1435,7 +1509,7 @@ action_embassy = {
 		UNION_ESTABLISH_EMBASSY_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -1515,7 +1589,7 @@ action_recall_embassy = {
 		UNION_RECALL_EMBASSY_PROPOSE = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -1597,7 +1671,7 @@ action_pledge_secret_fealty = {
 		UNION_PROPOSE_PLEDGE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -1624,7 +1698,7 @@ action_propose_secret_fealty = {
 		UNION_PROPOSE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -1659,7 +1733,7 @@ action_propose_to_break_secret_fealty = {
 		UNION_PROPOSE_REVOKE_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
@@ -1686,7 +1760,7 @@ action_break_secret_fealty = {
 		UNION_PROPOSE_BREAK_SECRET_FEALTY = {
 			weight = { weight = 50 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}

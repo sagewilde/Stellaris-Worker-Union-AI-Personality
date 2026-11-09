@@ -9,9 +9,9 @@ action_make_rival = {
 	}
 	propose = {
 		UNION_MAKE_RIVAL_PROPOSE = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 				NOR = {
 					is_megacorp = yes
 					is_megaunion = yes
@@ -19,10 +19,10 @@ action_make_rival = {
 			}
 		}
 		TO_UNION_MAKE_RIVAL_PROPOSE = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
-				from = {
+				FROM = {
 					NOR = {
 						is_megacorp = yes
 						is_megaunion = yes
@@ -31,32 +31,32 @@ action_make_rival = {
 			}
 		}
 		UNION_CORP_MAKE_RIVAL_PROPOSE = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 				is_megacorp = yes
 			}
 		}
 		CORP_UNION_MAKE_RIVAL_PROPOSE = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
-				from = {
+				FROM = {
 					is_megacorp = yes
 				}
 			}
 		}
 		UNION_UNION_MAKE_RIVAL_PROPOSE = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
-				from = { is_megaunion = yes }
+				FROM = { is_megaunion = yes }
 			}
 		}
 	}
 	accept = {
 		UNION_MAKE_RIVAL_ACCEPT_HOSTILE = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -73,7 +73,7 @@ action_make_rival = {
 			}
 		}
 		UNION_MAKE_RIVAL_ACCEPT_NEUTRAL = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -89,7 +89,7 @@ action_make_rival = {
 			}
 		}
 		UNION_MAKE_RIVAL_ACCEPT_FRIENDLY = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -106,7 +106,7 @@ action_make_rival = {
 			}
 		}
 		TO_UNION_MAKE_RIVAL_ACCEPT_HOSTILE = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				FROM = { is_megaunion = yes }
 				NOR = {
@@ -121,7 +121,7 @@ action_make_rival = {
 			}
 		}
 		TO_UNION_MAKE_RIVAL_ACCEPT_NEUTRAL = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				FROM = { is_megaunion = yes }
 				NOR = {
@@ -135,7 +135,7 @@ action_make_rival = {
 			}
 		}
 		TO_UNION_MAKE_RIVAL_ACCEPT_FRIENDLY = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				FROM = { is_megaunion = yes }
 				NOR = {
@@ -150,7 +150,7 @@ action_make_rival = {
 			}
 		}
 		UNION_CORP_MAKE_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -159,14 +159,14 @@ action_make_rival = {
 			}
 		}
 		CORP_UNION_MAKE_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				FROM = { is_megaunion = yes }
 				is_megacorp = yes
 			}
 		}
 		UNION_UNION_MAKE_RIVAL_ACCEPT = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -188,7 +188,7 @@ action_end_rivalry = {
 	}
 	propose = {
 		UNION_END_RIVALRY_FRIENDLY = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -205,7 +205,7 @@ action_end_rivalry = {
 			}
 		}
 		UNION_END_RIVALRY_NEUTRAL = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -221,7 +221,7 @@ action_end_rivalry = {
 			}
 		}
 		UNION_END_RIVALRY_HOSTILE = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -238,7 +238,7 @@ action_end_rivalry = {
 			}
 		}
 		TO_UNION_END_RIVALRY_HOSTILE = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				NOR = {
 					is_megaunion = yes
@@ -253,7 +253,7 @@ action_end_rivalry = {
 			}
 		}
 		UNION_CORP_END_RIVALRY_FRIENDLY = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = { is_megacorp = yes }
@@ -265,7 +265,7 @@ action_end_rivalry = {
 			}
 		}
 		CORP_UNION_END_RIVALRY_FRIENDLY= {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				NOR = {
 					is_megaunion = yes
@@ -281,7 +281,7 @@ action_end_rivalry = {
 			}
 		}
 		UNION_CORP_END_RIVALRY_NEUTRAL= {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = { is_megacorp = yes }
@@ -292,7 +292,7 @@ action_end_rivalry = {
 			}
 		}
 		CORP_UNION_END_RIVALRY_NEUTRAL= {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megacorp = yes
 				FROM = { is_megaunion = yes }
@@ -303,7 +303,7 @@ action_end_rivalry = {
 			}
 		}
 		UNION_CORP_END_RIVALRY_HOSTILE= {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = { is_megacorp = yes }
@@ -316,7 +316,7 @@ action_end_rivalry = {
 			
 		}
 		CORP_UNION_END_RIVALRY_HOSTILE= {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megacorp = yes
 				FROM = { is_megaunion = yes }
@@ -328,7 +328,6 @@ action_end_rivalry = {
 			}
 		}
 		UNION_UNION_END_RIVALRY= {
-			weight = { weight = 10000 }
 			trigger = {
 				is_megaunion = yes
 				FROM = { is_megaunion = yes }
@@ -338,7 +337,7 @@ action_end_rivalry = {
 	accept = {
 		# Unions to Default
 		UNION_END_RIVALRY_ACCEPT = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -350,7 +349,7 @@ action_end_rivalry = {
 			}
 		}
 		UNION_CORP_END_RIVALRY_ACCEPT = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -359,7 +358,7 @@ action_end_rivalry = {
 			}
 		}
 		UNION_UNION_END_RIVALRY_ACCEPT = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 				FROM = { is_megaunion = yes }
@@ -370,31 +369,47 @@ action_end_rivalry = {
 
 action_declare_war = {
 	propose = {
-		# Generic
+		# Capitalists
 		UNION_DOW_PROPOSE_01 = {
-			weight = { weight = 10000 }
+			weight = { weight = 3 }
 			trigger = {
 				FROM = {
 					is_megaunion = yes
 				}
+				is_capitalism = yes
 			}
 		}
-		# Crisis or Homicidal
 		UNION_DOW_PROPOSE_02 = {
-			weight = { weight = 10000 }
+			weight = { weight = 3 }
 			trigger = {
 				FROM = {
 					is_megaunion = yes
 				}
-				OR = { 
-					is_capitalist = yes
-					is_fascist = yes
+				is_capitalism = yes
+			}
+		}
+		# Generic
+		UNION_DOW_PROPOSE_03 = {
+			weight = { weight = 3 }
+			trigger = {
+				FROM = {
+					is_megaunion = yes
 				}
+				is_capitalism = no
+			}
+		}
+		UNION_DOW_PROPOSE_04 = {
+			weight = { weight = 3 }
+			trigger = {
+				FROM = {
+					is_megaunion = yes
+				}
+				is_capitalism = no
 			}
 		}
 		# Subject
 		UNION_VASSAL_DOW_PROPOSE = {
-			weight = { weight = 10000 }
+			weight = { weight = 3000 }
 			trigger = {
 				is_megaunion = yes
 				FROM = {
@@ -406,18 +421,41 @@ action_declare_war = {
 	}
 	accept = {
 		# Generic
-		UNION_DOW_ACCEPT = {
-			weight = { weight = 1000 }
+		UNION_DOW_ACCEPT_01 = {
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				FROM = {
+					is_capitalism = yes
+				}
+			}
+		}
+		UNION_DOW_ACCEPT_02 = {
+			weight = { weight = 3 }
+			trigger = {
+				is_megaunion = yes
+				FROM = {
+					is_capitalism = yes
+				}
+			}
+		}
+		UNION_DOW_ACCEPT_03 = {
+			weight = { weight = 300 }
+			trigger = {
+				is_megaunion = yes
+				FROM = {
+					is_capitalism = no
+				}
 			}
 		}
 	}
 	propose_vote = {
 		UNION_DOW_VOTE_PROPOSE = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
-				from = { is_megaunion = yes }
+				FROM = { 
+					is_megaunion = yes
+				}
 			}
 		}
 	}
@@ -425,8 +463,8 @@ action_declare_war = {
 
 action_offer_peace = {
 	consider = {
-		UNION_CONSIDER = {
-			weight = { weight = 100 }
+		UNION_PEACE_CONSIDER_01 = {
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 			}
@@ -435,39 +473,39 @@ action_offer_peace = {
 	propose = {
 		# Generic Empires
 		UNION_PEACE_PROPOSE_01 = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
-				from = {
+				FROM = {
 					is_megaunion = yes
 				}
 			}
 		}
-		# Plants
+		# MegaCorps
 		UNION_PEACE_PROPOSE_02 = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megacorp = yes
-				from = {
+				FROM = {
 					is_megaunion = yes
 				}
 			}
 		}
 		# Socialists
 		UNION_PEACE_PROPOSE_03 = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_socialism = yes 
-				from = {
+				FROM = {
 					is_megaunion = yes
 				}
 			}
 		}
 		# Fascists
 		UNION_PEACE_PROPOSE_04 = {
-			weight = { weight = 1000 }
+			weight = { weight = 50 }
 			trigger = {
 				is_fascist = yes
-				from = {
+				FROM = {
 					is_megaunion = yes
 				}
 			}
@@ -476,24 +514,68 @@ action_offer_peace = {
 	accept = {
 		# Generic Empires
 		UNION_PEACE_ACCEPT_01 = {
-			weight = { weight = 1000 }
+			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
 			}
 		}
-		# Socialists
+		# Fascists and Neoliberals
 		UNION_PEACE_ACCEPT_02 = {
-			weight = { weight = 1000 }
+			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
-				FROM = { is_socialism = yes	}
+				FROM = {
+					OR = { 
+						is_fascist = yes
+						AND = {
+							is_capitalism = yes
+							has_authority = auth_democratic
+						}
+					}
+				}
 			}
 		}
 	}
 	refuse = {
-		UNION_PEACE_REFUSE = {
+		UNION_PEACE_REFUSE_01 = {
+			weight = { weight = 3 }
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_PEACE_REFUSE_02 = {
+			weight = { weight = 3 }
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_PEACE_REFUSE_03 = {
+			weight = { weight = 3 }
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_PEACE_REFUSE_04 = {
+			weight = { weight = 3 }
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_VASSAL_PEACE_REFUSE_01 = {
 			weight = { weight = 1000 }
 			trigger = {
+				exists = overlord
+				overlord = { is_same_value = FROM }
+				is_megaunion = yes
+			}
+		}
+		UNION_OVERLORD_PEACE_REFUSE_01 = {
+			weight = { weight = 1000 }
+			trigger = {
+				FROM = {
+					exists = overlord
+					overlord = { is_same_value = ROOT }
+				}
 				is_megaunion = yes
 			}
 		}
