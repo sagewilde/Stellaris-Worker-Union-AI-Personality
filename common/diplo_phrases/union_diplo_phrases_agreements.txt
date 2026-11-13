@@ -88,30 +88,6 @@ action_offer_trade_deal = {
 				}
 			}
 		}
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_BW_01 = {
-			only_for_gift = yes
-			weight = { weight = 100 }
-			trigger = {
-				is_megaunion = yes
-				NOR = {
-					is_hostile_to = FROM
-					is_domineering_to = FROM
-					is_unfriendly_to = FROM
-				}
-			}
-		}
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_BW_02 = {
-			only_for_gift = yes
-			weight = { weight = 100 }
-			trigger = {
-				is_megaunion = yes
-				NOR = {
-					is_hostile_to = FROM
-					is_domineering_to = FROM
-					is_unfriendly_to = FROM
-				}
-			}
-		}
 		UNION_OFFER_TRADE_DEAL_ACCEPT = {
 			only_for_trade = yes
 			weight = { weight = 100 }
