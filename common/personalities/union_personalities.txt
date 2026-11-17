@@ -216,8 +216,8 @@ humble_cooperative = {
 			}
 		}
 		modifier = {
-			add = -10
-			has_country_flag = human_1	# failsafe to make sure UNE still spawns as Federation Builders
+			add = -5
+			has_trait = trait_nomadic
 		}
 	}
 }

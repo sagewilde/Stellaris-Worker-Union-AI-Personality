@@ -6,7 +6,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -21,7 +21,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -36,7 +36,22 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_hostile_to = FROM
+				is_domineering_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	UNION_HOSTILE_GREETING_06 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megaunion = yes
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -51,7 +66,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megacorp = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -67,7 +82,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megacorp = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -83,7 +98,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megacorp = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -99,7 +114,7 @@ greetings = {
 		}
 		trigger = {
 			is_megacorp = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megaunion = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -115,7 +130,7 @@ greetings = {
 		}
 		trigger = {
 			is_megacorp = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megaunion = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -131,7 +146,7 @@ greetings = {
 		}
 		trigger = {
 			is_megacorp = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megaunion = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -147,7 +162,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion =yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			FROM = {
 				is_megaunion = yes
@@ -165,7 +180,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -179,7 +194,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -193,7 +208,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -207,7 +222,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -222,7 +237,7 @@ greetings = {
 		trigger = {
 			FROM = { is_megacorp = yes }
 			is_megacorp = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -237,7 +252,7 @@ greetings = {
 		trigger = {
 			FROM = { is_megacorp = yes }
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -252,7 +267,7 @@ greetings = {
 		trigger = {
 			FROM = { is_megaunion = yes }
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -266,7 +281,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = from }
 			is_threatened_to = FROM
 		}
@@ -277,7 +292,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_friendly_to = FROM
@@ -292,7 +307,7 @@ greetings = {
 		}
 		trigger = {
 			is_megacorp = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megaunion = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -308,7 +323,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megacorp = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -324,7 +339,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megaunion = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
@@ -341,7 +356,7 @@ greetings = {
 		trigger = {
 			is_megaunion = yes
 			FROM = { is_megaunion = no }
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_at_war_with = FROM
 		}
 	}
@@ -352,7 +367,7 @@ greetings = {
 		trigger = {
 			is_megaunion = yes
 			FROM = { is_megaunion = no }
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_at_war_with = FROM
 		}
 	}
@@ -363,7 +378,7 @@ greetings = {
 		trigger = {
 			is_megaunion = yes
 			FROM = { is_megaunion = no }
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_at_war_with = FROM
 		}
 	}
@@ -373,7 +388,7 @@ greetings = {
 		}
 		trigger = {
 			is_megacorp = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megaunion = yes }
 			is_at_war_with = FROM
 		}
@@ -384,7 +399,7 @@ greetings = {
 		}
 		trigger = {
 			is_megacorp = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megaunion = yes }
 			is_at_war_with = FROM
 		}
@@ -395,7 +410,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megacorp = yes }
 			is_at_war_with = FROM
 		}
@@ -406,7 +421,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			FROM = { is_megacorp = yes }
 			is_at_war_with = FROM
 		}
@@ -418,7 +433,7 @@ greetings = {
 		trigger = {
 			is_megaunion = yes
 			FROM = { is_megaunion = yes }
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_at_war_with = FROM
 		}
 	}
@@ -429,7 +444,7 @@ greetings = {
 		trigger = {
 			is_megaunion = yes
 			FROM = { is_megaunion = yes }
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_at_war_with = FROM
 		}
 	}
@@ -440,7 +455,7 @@ greetings = {
 		trigger = {
 			is_megaunion = yes
 			FROM = { is_megaunion = yes }
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_at_war_with = FROM
 		}
 	}
@@ -450,7 +465,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_overlord_to = FROM
 		}
 	}
@@ -460,7 +475,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_overlord_to = FROM
 		}
 	}
@@ -470,7 +485,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			NOR = {
@@ -485,7 +500,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			NOR = {
@@ -500,7 +515,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			is_disloyal_to = FROM
@@ -513,7 +528,7 @@ greetings = {
 		}
 		trigger = {
 			is_megaunion = yes
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_domineering_to = FROM
 			NOT = { is_at_war_with = FROM }
 		}
@@ -527,7 +542,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -544,7 +559,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -561,7 +576,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -578,7 +593,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -595,7 +610,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -612,7 +627,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -633,7 +648,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -654,7 +669,7 @@ greetings = {
 			FROM = {
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_hostile_to = FROM
@@ -671,7 +686,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -687,7 +702,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_neutral_to = FROM
@@ -703,7 +718,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = from }
 			is_threatened_to = FROM
 		}
@@ -716,7 +731,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_friendly_to = FROM
@@ -733,7 +748,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_friendly_to = FROM
@@ -750,7 +765,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
 			OR = {
 				is_friendly_to = FROM
@@ -767,7 +782,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_at_war_with = FROM
 		}
 	}
@@ -779,7 +794,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_at_war_with = FROM
 		}
 	}
@@ -791,7 +806,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_at_war_with = FROM
 		}
 	}
@@ -803,7 +818,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			NOR = {
@@ -820,7 +835,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			exists = overlord
 			overlord = { is_same_value = FROM }
 			is_disloyal_to = FROM
@@ -835,7 +850,7 @@ greetings = {
 			FROM = { 
 				is_megaunion = yes 
 			}
-			NOT = { is_special_personality = yes }
+			NOT = { is_seap_personality = yes }
 			is_domineering_to = FROM
 			NOT = { is_at_war_with = FROM }
 		}
