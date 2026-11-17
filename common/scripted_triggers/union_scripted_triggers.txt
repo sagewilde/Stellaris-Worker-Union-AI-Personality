@@ -1,7 +1,6 @@
 ### Mod Identifier
 
 has_megaunion_ai_personalities = { always = yes }
-has_sage_expressive_personalities = { always = yes }
 
 ### Vanilla Overwrites
 is_megacorp = {
@@ -16,50 +15,7 @@ has_corporate_government = {
 		has_civic = civic_galactic_sovereign_megacorp
 	}
 }
-
-has_federator_personality = {
-	OR = {
-		has_ai_personality = federation_builders
-		has_ai_personality = spiritual_seekers
-		has_ai_personality = migrating_flock
-		has_ai_personality = peaceful_traders
-		has_ai_personality = hive_mind_friend
-		has_ai_personality = peaceful_counterculture
-		has_ai_personality = humble_cooperative
-	}
-}
-
-has_ambush_doctrine_personality = {
-	OR = {
-		has_ai_personality = erudite_explorers
-		has_ai_personality = ruthless_capitalists
-		has_ai_personality = slaving_despots
-		has_ai_personality = decadent_capitalists
-		has_ai_personality = mirthful_bandits
-		has_ai_personality = cynical_socialists
-	}
-}
-
-has_strike_wing_doctrine_personality = {
-	OR = {
-		has_ai_personality = peaceful_traders
-		has_ai_personality = migrating_flock
-		has_ai_personality = hive_mind_friend
-		has_ai_personality = fanatic_befrienders
-		has_ai_personality = benevolent_wilderness
-		has_ai_personality = devouring_swarm
-		has_ai_personality = humble_cooperative
-	}
-}
-
 # Unions
-is_special_personality = {
-	OR = {
-		has_ai_personality = peaceful_counterculture
-		has_ai_personality = mirthful_bandits
-		has_ai_personality = cunning_raiders
-	}
-}
 
 is_megaunion = {
 	has_authority = auth_corporate

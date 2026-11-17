@@ -1,3 +1,2 @@
 # Mod Identifier
 @has_union_ai_personalities = 1
-@has_sage_expressive_personalities = 1
