@@ -1,0 +1,59 @@
+triggered_opinion_corp_vs_union = {
+	trigger = {
+		is_megacorp = yes
+		FROM = {
+			is_megaunion = yes
+		}
+	}
+
+	opinion = {
+		base = -40
+		modifier = {
+			add = -20
+			has_ethic = ethic_fanatic_capitalism
+		}
+	}
+}
+
+triggered_opinion_union_vs_corp = {
+	trigger = {
+		is_megaunion = yes
+		FROM = {
+			is_megacorp = yes
+		}
+	}
+
+	opinion = {
+		base = -40
+		modifier = {
+			add = -20
+			has_ethic = ethic_fanatic_socialism
+		}
+	}
+}
+
+triggered_opinion_fash_vs_antifa = {
+	trigger = {
+		is_fascist = yes
+		FROM = {
+			is_anti_fascist = yes
+		}
+	}
+
+	opinion = {
+		base = -500
+	}
+}
+
+triggered_opinion_antifa_vs_fash = {
+	trigger = {
+		is_anti_fascist = yes
+		FROM = {
+			is_fascist = yes
+		}
+	}
+
+	opinion = {
+		base = -500
+	}
+}

@@ -55,10 +55,7 @@ is_anti_fascist = {
 		AND = {
 			has_ethic = ethic_fanatic_egalitarian
 			is_socialism = yes
-			OR = {
-				is_militarist = yes
-				is_xenophile = yes
-			}
+			values_others = yes
 		}
 	}
 }

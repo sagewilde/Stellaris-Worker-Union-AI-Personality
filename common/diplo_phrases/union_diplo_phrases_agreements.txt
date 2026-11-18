@@ -11,29 +11,18 @@ action_offer_trade_deal = {
 			trigger = {
 				FROM = { is_megaunion = yes }
 			}
+			weight = { weight = 5 }
 		}
 		UNION_OFFER_TRADE_DEAL_PROPOSE_02 = {
 			only_for_trade = yes
 			trigger = {
 				FROM = { is_megaunion = yes }
 			}
-		}
-		UNION_OFFER_TRADE_DEAL_PROPOSE_3 = {
-			only_for_trade = yes
-			trigger = {
-				is_machine_empire = yes
-				FROM = { is_megaunion = yes }
-			}
-		}
-		UNION_OFFER_TRADE_DEAL_PROPOSE_4 = {
-			only_for_trade = yes
-			trigger = {
-				FROM = { is_megaunion = yes }
-			}
+			weight = { weight = 3 }
 		}
 	}
 	accept = {
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_01 = {
+		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT = {
 			only_for_gift = yes
 			trigger = {
 				is_megaunion = yes
@@ -44,36 +33,10 @@ action_offer_trade_deal = {
 				}
 			}
 		}
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_02 = {
+		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_HOSTILE = {
 			only_for_gift = yes
 			trigger = {
 				is_megaunion = yes
-				NOR = {
-					is_hostile_to = FROM
-					is_domineering_to = FROM
-					is_unfriendly_to = FROM
-				}
-			}
-		}
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_HOSTILE_01 = {
-			only_for_gift = yes
-			trigger = {
-				is_megaunion = yes
-				OR = {
-					is_hostile_to = FROM
-					is_domineering_to = FROM
-					is_unfriendly_to = FROM
-				}
-			}
-		}
-		UNION_OFFER_TRADE_DEAL_GIFT_ACCEPT_HOSTILE_02 = {
-			only_for_gift = yes
-			trigger = {
-				NOR = {
-					is_country_type = fallen_empire
-					is_machine_empire = yes
-					is_megacorp = yes
-				}
 				OR = {
 					is_hostile_to = FROM
 					is_domineering_to = FROM
@@ -97,24 +60,14 @@ action_offer_trade_deal = {
 		}
 	}
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
 			trigger = {
 				is_megaunion = yes
-				NOR = {
-					is_hostile_to = FROM
-					is_domineering_to = FROM
-					is_unfriendly_to = FROM
-				}
 			}
 		}
-		UNION_CONSIDER_BAD = {
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
-				OR = {
-					is_hostile_to = FROM
-					is_domineering_to = FROM
-					is_unfriendly_to = FROM
-				}
 			}
 		}
 	}
@@ -151,6 +104,10 @@ action_form_defensive_pact = {
 		UNION_FORM_DP_PROPOSE_02 = {
 			trigger = {
 				FROM = { is_megaunion = yes }
+				NOR = {
+					has_ethic = ethic_gestalt_consciousness
+					is_species_class = MACHINE
+				}
 			}
 		}
 	}
@@ -203,7 +160,12 @@ action_break_defensive_pact = {
 
 action_form_non_aggression_pact = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -428,7 +390,12 @@ action_break_support = {
 
 action_form_migration_pact = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -540,7 +507,12 @@ action_close_borders = {
 
 action_invite_to_federation = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -684,7 +656,12 @@ action_invite_to_federation = {
 
 action_ask_to_join_federation = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -722,7 +699,12 @@ action_ask_to_join_federation = {
 
 action_leave_federation = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -751,7 +733,7 @@ action_leave_federation = {
 	}
 }
 
-action_kick_FROM_federation = {
+action_kick_from_federation = {
 	select = {
 		UNION_KICK_FROM_ALLIANCE_SELECT = {
 			trigger = {
@@ -777,7 +759,12 @@ action_kick_FROM_federation = {
 
 action_offer_federation_association_status = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -839,7 +826,12 @@ action_revoke_federation_association_status = {
 
 action_ask_for_federation_association_status = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -927,7 +919,12 @@ action_ask_to_leave_federation = {
 
 action_demand_subjugation = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -1013,7 +1010,12 @@ action_demand_subjugation = {
 
 action_ask_to_become_subjugated = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -1051,7 +1053,12 @@ action_ask_to_become_subjugated = {
 
 action_demand_subsidiary = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -1121,7 +1128,12 @@ action_demand_subsidiary = {
 
 action_ask_to_become_subsidiary = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -1192,7 +1204,12 @@ action_release_subject = {
 
 action_ask_to_be_released_subject = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -1230,7 +1247,12 @@ action_ask_to_be_released_subject = {
 
 action_demand_tributary = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -1268,7 +1290,12 @@ action_demand_tributary = {
 
 action_ask_to_become_tributary = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -1308,7 +1335,12 @@ action_ask_to_become_tributary = {
 
 action_form_commercial_pact = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -1322,7 +1354,12 @@ action_form_commercial_pact = {
 
 action_form_research_agreement = {
 	consider = {
-		UNION_CONSIDER = {
+		UNION_CONSIDER_01 = {
+			trigger = {
+				is_megaunion = yes
+			}
+		}
+		UNION_CONSIDER_02 = {
 			trigger = {
 				is_megaunion = yes
 			}

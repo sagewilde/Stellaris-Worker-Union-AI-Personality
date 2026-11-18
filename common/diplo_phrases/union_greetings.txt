@@ -286,7 +286,54 @@ greetings = {
 			is_threatened_to = FROM
 		}
 	}
+	UNION_FRIENDLY_GREETING_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megaunion = yes
+			is_authoritarian = yes
+			NOT = { is_seap_personality = yes }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
 	UNION_FRIENDLY_GREETING_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megaunion = yes
+			is_egalitarian = yes
+			NOT = { is_seap_personality = yes }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	UNION_FRIENDLY_GREETING_03 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			is_megaunion = yes
+			NOT = { is_seap_personality = yes }
+			NOT = { is_at_war_with = FROM }
+			OR = {
+				is_friendly_to = FROM
+				is_cordial_to = FROM
+				is_protective_to = FROM
+			}
+		}
+	}
+	UNION_FRIENDLY_GREETING_04 = {
 		weight = {
 			weight = 3
 		}
@@ -746,7 +793,7 @@ greetings = {
 		}
 		trigger = {
 			FROM = { 
-				is_megaunion = yes 
+				is_megaunion = yes
 			}
 			NOT = { is_seap_personality = yes }
 			NOT = { is_at_war_with = FROM }
