@@ -89,7 +89,7 @@ action_form_defensive_pact = {
 		}
 	}
 	select = {
-		UNION_FORM_DP_SELECT_01 = {
+		UNION_FORM_DP_SELECT = {
 			trigger = {
 				is_megaunion = yes
 			}
@@ -112,7 +112,7 @@ action_form_defensive_pact = {
 		}
 	}
 	accept = {
-		UNION_FORM_DP_ACCEPT_01 = {
+		UNION_FORM_DP_ACCEPT = {
 			trigger = {
 				is_megaunion = yes
 			}

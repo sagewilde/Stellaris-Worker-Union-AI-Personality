@@ -7,7 +7,7 @@ triggered_opinion_corp_vs_union = {
 	}
 
 	opinion = {
-		base = -40
+		base = -50
 		modifier = {
 			add = -20
 			has_ethic = ethic_fanatic_capitalism
@@ -24,7 +24,7 @@ triggered_opinion_union_vs_corp = {
 	}
 
 	opinion = {
-		base = -40
+		base = -50
 		modifier = {
 			add = -20
 			has_ethic = ethic_fanatic_socialism

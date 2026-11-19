@@ -54,7 +54,7 @@ cynical_socialists = {
 		OR = {
 			is_industrial = yes
 			is_authoritarian = yes
-			has_trait = "trait_communal"
+			has_trait = "trait_decadent"
 		}
 	}
 
@@ -85,11 +85,10 @@ cynical_socialists = {
 			}
 		}
 		modifier = {
-			add = 5
+			add = 10
 			OR = {
-				has_trait = trait_communal
-				has_trait = trait_robot_double_jointed
-				has_trait = trait_robot_history_resourcebot
+				is_militarist = yes
+				is_authoritarian = yes
 			}
 		}
 		modifier = {
@@ -191,6 +190,13 @@ humble_cooperative = {
 				has_valid_civic = civic_idealistic_foundation
 				has_valid_civic = civic_welfare_state
 				has_valid_civic = civic_labour_unions
+			}
+		}
+		modifier = {
+			add = 10
+			OR = {
+				is_xenophile = yes
+				is_egalitarian = yes
 			}
 		}
 		modifier = {
