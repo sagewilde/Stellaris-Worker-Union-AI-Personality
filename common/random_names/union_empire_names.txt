@@ -1,0 +1,572 @@
+# Megaunion Parts List
+empire_name_parts_list = {
+	key = mu_megaunion
+	parts = {
+		Confederation_of_Labor = 3
+		Organization_of_Workers = 3
+		Union = 3
+		Co-Operative = 2
+		Trade_Union = 3
+		Organization = 2
+		Guild = 2
+		Syndicate = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = mu_megaunion_desc
+	parts = {
+		Interstellar = 3
+		Intersolar = 2
+		Galactic = 2
+		Pan-Galactic = 2
+		Grand = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = mu_megaunion_mid_desc
+	parts = {
+		Assured = 2
+		Bonded = 2
+		Social = 2
+		Collaborative = 1
+		Star = 1
+	}
+}
+
+# Agricultural Cooperative Parts List
+empire_name_parts_list = {
+	key = mu_farmers
+	parts = {
+		Agricultural_Workers = 2
+		Farm_Workers = 2
+		Ranchers_Rangers = 1
+		Cultivators_Guild = 1
+		Growers_Union = 1
+	}
+}
+
+# Fisher Guild Parts List
+empire_name_parts_list = {
+	key = mu_fishers
+	parts = {
+		Fishers = 3
+		Fishers_Guild = 2
+		Marine_Workers = 2
+		Aquarists_and_Divers_Union = 1
+		Undersea_Operators = 1
+		Maritime_Laborers = 1
+	}
+}
+
+# Mineral Compact Parts List
+empire_name_parts_list = {
+	key = mu_miners
+	parts = {
+		Miners = 3
+		Industrial_Workers = 2
+		Metalworkers = 2
+		Artisans = 2
+		Foundry_of_Equals = 1
+	}
+}
+
+# Energy Workers' Union Parts List
+empire_name_parts_list = {
+	key = mu_technicians
+	parts = {
+		Technicians = 3
+		Order_of_Electricians = 2
+		Guild_of_Power_Workers = 2
+		Technical_Guild = 1
+		Electrical_Laborers = 1
+		Telecom_Union = 1
+	}
+}
+
+### Megaunion
+
+# Megaunion 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_megaunion"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB {<mu_megaunion> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <mu_megaunion>}}"
+	# Empire of Sol
+}
+
+# Megaunion 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_megaunion"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB{<mu_megaunion> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <mu_megaunion>}}"
+	# Empire of Earth
+}
+
+# Megaunion 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_megaunion"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<mu_megaunion>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_megaunion>}}"
+	# Human Empire
+}
+
+# Megaunion 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_megaunion"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<mu_megaunion_desc> {[This.GetSpeciesAdj] {<mu_megaunion>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_megaunion>}}"
+	# Great Human Empire
+}
+
+# Megaunion 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_megaunion"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<mu_megaunion_mid_desc> {<mu_megaunion>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_megaunion>}}"
+	# Human Star Empire
+}
+
+### Agricultural Cooperative
+
+# Agricultural Cooperative 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_agricultural_cooperative"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB {<mu_farmers> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <mu_farmers>}}"
+	# Empire of Sol
+}
+
+# Agricultural Cooperative 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_agricultural_cooperative"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB{<mu_farmers> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <mu_farmers>}}"
+	# Empire of Earth
+}
+
+# Agricultural Cooperative 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_agricultural_cooperative"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<mu_farmers>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_farmers>}}"
+	# Human Empire
+}
+
+# Agricultural Cooperative 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_agricultural_cooperative"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<mu_megaunion_desc> {[This.GetSpeciesAdj] {<mu_farmers>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_farmers>}}"
+	# Great Human Empire
+}
+
+# Agricultural Cooperative 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_agricultural_cooperative"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<mu_megaunion_mid_desc> {<mu_farmers>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_farmers>}}"
+	# Human Star Empire
+}
+
+### Fisher Guild
+
+# Fisher Guild 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1000
+			has_government = "gov_fisher_guild"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB {<mu_fishers> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <mu_fishers>}}"
+	# Empire of Sol
+}
+
+# Fisher Guild 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1000
+			has_government = "gov_fisher_guild"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB{<mu_fishers> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <mu_fishers>}}"
+	# Empire of Earth
+}
+
+# Fisher Guild 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1000
+			has_government = "gov_fisher_guild"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<mu_fishers>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_fishers>}}"
+	# Human Empire
+}
+
+# Fisher Guild 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1000
+			has_government = "gov_fisher_guild"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<mu_fishers> {[This.GetSpeciesAdj] {<mu_fishers>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_fishers>}}"
+	# Great Human Empire
+}
+
+# Fisher Guild 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1000
+			has_government = "gov_fisher_guild"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<mu_megaunion_mid_desc> {<mu_fishers>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_fishers>}}"
+	# Human Star Empire
+}
+
+### Mineral Compact
+
+# Mineral Compact 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = gov_mineral_compact
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB {<mu_miners> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <mu_miners>}}"
+	# Empire of Sol
+}
+
+# Mineral Compact 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = gov_mineral_compact
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB{<mu_miners> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <mu_miners>}}"
+	# Empire of Earth
+}
+
+# Mineral Compact 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_mineral_compact"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<mu_miners>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_miners>}}"
+	# Human Empire
+}
+
+# Mineral Compact 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = gov_mineral_compact
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<mu_megaunion_desc> {[This.GetSpeciesAdj] {<mu_miners>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_miners>}}"
+	# Great Human Empire
+}
+
+# Mineral Compact 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_mineral_compact"	
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<mu_megaunion_mid_desc> {<mu_miners>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_miners>}}"
+	# Human Star Empire
+}
+
+
+### Energy Workers' Union
+
+# Energy Workers' Union 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_energy_union"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB {<mu_technicians> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <mu_technicians>}}"
+	# Empire of Sol
+}
+
+# Energy Workers' Union 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_energy_union"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{AofB{<mu_technicians> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <mu_technicians>}}"
+	# Empire of Earth
+}
+
+# Energy Workers' Union 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_energy_union"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<mu_technicians>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_technicians>}}"
+	# Human Empire
+}
+
+# Energy Workers' Union 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_energy_union"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{<mu_megaunion_desc> {[This.GetSpeciesAdj] {<mu_technicians>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_technicians>}}"
+	# Great Human Empire
+}
+
+# Energy Workers' Union 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_energy_union"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "{[This.GetSpeciesAdj] {<mu_megaunion_mid_desc> {<mu_technicians>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<mu_technicians>}}"
+	# Human Star Empire
+}

@@ -1,0 +1,43 @@
+﻿l_english:
+# mu_megaunion
+ Confederation_of_Labor: "Confederation of Labor"
+ Organization_of_Workers: "Organization of Workers"
+ Guild: "Guild"
+ Co-Operative: "Co-Operative"
+
+# mu_megaunion_mid_desc
+ Assured: "Assured"
+ Bonded: "Bonded"
+ Social: "Social"
+ Collaborative: "Collaborative"
+
+# mu_farmers
+ Agricultural_Workers: "Agricultural Workers"
+ Farm_Workers: "Farm Workers"
+ Ranchers_Rangers: "Ranchers and Rangers"
+ Cultivators_Guild: "Cultivators' Guild"
+ Growers_Union: "Growers' Union"
+
+# mu_fishers
+ Fishers: "Fishers"
+ Fishers_Guild: "Fishers' Guild"
+ Marine_Workers: "Marine Workers"
+ Aquarists_and_Divers_Union: "Aquarists' and Divers' Union"
+ Sea_Harvesters: "Sea Harvesters"
+ Undersea_Operators: "Undersea Operators"
+ Maritime_Laborers: "Maritime Laborers"
+
+# mu_miners
+ Miners: "Miners"
+ Industrial_Workers: "Industrial Workers"
+ Metalworkers: "Metalworkers"
+ Artisans: "Artisans"
+ Foundry_of_Equals: "Foundry of Equals"
+
+# mu_technicians
+ Technicians: "Technicians"
+ Order_of_Electricians: "Order of Electricians"
+ Guild_of_Power_Workers: "Guild of Power Workers"
+ Technical_Guild: "Technical Guild"
+ Electrical_Laborers: "Electrical Laborers"
+ Telecom_Union: "Telecom Union"

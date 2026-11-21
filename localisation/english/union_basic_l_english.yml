@@ -15,7 +15,7 @@
  gov_fisher_guild:0 "Fishers' Guild"
  gov_fisher_guild_desc:0 "A Fishers' Guild mandates membership in a union of fishers in order to partake of the bounty of the seas. By maintaining a strong foothold in aquaculture, this Megaunion in turn controls the entire navy and shipping industry."
  gov_energy_union:0 "Energy Workers' Union"
- gov_energy_union:0 "This Megaunion began as a guild of technicians, electricians, and communications operators. Through controlling the production of energy, they consolidated authority. Their chief concerns still gravitate toward power and infrastructure."
+ gov_energy_union_desc:0 "This Megaunion began as a guild of technicians, electricians, and communications operators. Through controlling power and subspace telecom infrastructure, they consolidated authority. Their chief concerns still gravitate toward energy production."
 
  triggered_opinion_corp_vs_union:0 "$gov_megaunion$"
  triggered_opinion_union_vs_corp:0 "$gov_megacorporation$"
