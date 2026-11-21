@@ -242,8 +242,8 @@ gov_fisher_guild = {
 }
 
 gov_energy_union = {
-	ruler_title = RT_MAS_ELECTR
-	ruler_title_female = RT_MAS_ELECTR
+	ruler_title = RT_GM_TECHNICIAN
+	ruler_title_female = RT_GM_TECHNICIAN
 
 	should_force_rename = yes
 

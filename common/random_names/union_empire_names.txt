@@ -54,7 +54,8 @@ empire_name_parts_list = {
 		Fishers = 3
 		Fishers_Guild = 2
 		Marine_Workers = 2
-		Aquarists_and_Divers_Union = 1
+		Anglers_and_Divers_Union = 1
+		Sea_Harvesters = 1
 		Undersea_Operators = 1
 		Maritime_Laborers = 1
 	}
@@ -68,6 +69,7 @@ empire_name_parts_list = {
 		Industrial_Workers = 2
 		Metalworkers = 2
 		Artisans = 2
+		Manufactory_Guild = 1
 		Foundry_of_Equals = 1
 	}
 }

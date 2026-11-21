@@ -27,7 +27,7 @@
  RT_FOREMAN:0 "Foreman"
  RT_FOREMAN_WOMAN:0 "Foreperson"
  RT_FLEET_STEWARD:0 "Fleet Steward"
- RT_MAS_ELECTR:0 "Grandmaster Technician"
+ RT_GM_TECHNICIAN:0 "Grandmaster Technician"
 
  PRESCRIPTED_ship_prefix_teians: "TSV"
  PRESCRIPTED_species_teians: "Hiloan"
@@ -42,4 +42,4 @@
  EMPIRE_DESIGN_teian_seavoid_commune_2:0 "$EMPIRE_DESIGN_teian_seavoid_commune$"
  EMPIRE_DESIGN_teian_seavoid_commune_2_desc:0 "$EMPIRE_DESIGN_teian_seavoid_commune_desc$"
  EMPIRE_DESIGN_teian_seavoid_commune:0 "Teian Seavoid Commune"
- EMPIRE_DESIGN_teian_seavoid_commune_desc:0 ""
+ EMPIRE_DESIGN_teian_seavoid_commune_desc:0 "Before there was history, there was the Sky Dragon. In antiquity, and even today in some circles, the Dragon is revered as a god of rain and storms. In most myths, it is depicted filling the seas and giving life to Hilo, and it is in the sea that the Hiloans grew to the maturity of their civilization. Deep underwater, the fish-herds tended schools of domesticated fish, and marine foresters cultivated jungles of kelp.\n\nThe dragon became a crucial part of the life cycle of the planet; its entry into the atmosphere generated monsoons, its voracious appetite a check on wild fish populations and algal blooms. The rhythm of life was bound inextricably with their great guardian.\n\nThe Hiloans, in an effort to appease the dragon's hunger, developed a culture of collaboration to protect their fisheries. By coordinating with one another, guilds of fishers developed safe landing zones where the dragon could feast without disturbing their schools and homes."

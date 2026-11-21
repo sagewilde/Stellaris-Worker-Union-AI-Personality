@@ -22,7 +22,7 @@
  Fishers: "Fishers"
  Fishers_Guild: "Fishers' Guild"
  Marine_Workers: "Marine Workers"
- Aquarists_and_Divers_Union: "Aquarists' and Divers' Union"
+ Anglers_and_Divers_Union: "Anglers' and Divers' Union"
  Sea_Harvesters: "Sea Harvesters"
  Undersea_Operators: "Undersea Operators"
  Maritime_Laborers: "Maritime Laborers"
@@ -32,6 +32,7 @@
  Industrial_Workers: "Industrial Workers"
  Metalworkers: "Metalworkers"
  Artisans: "Artisans"
+ Manufactory_Guild: "Manufactory Guild"
  Foundry_of_Equals: "Foundry of Equals"
 
 # mu_technicians
