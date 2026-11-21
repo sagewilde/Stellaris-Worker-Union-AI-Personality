@@ -4,6 +4,7 @@ action_make_rival = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 			}
 		}
 	}
@@ -11,7 +12,10 @@ action_make_rival = {
 		UNION_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 3 }
 			trigger = {
-				FROM = { is_megaunion = yes }
+				FROM = {
+					is_megaunion = yes
+					is_seap_personality = no
+				}
 				NOR = {
 					is_megacorp = yes
 					is_megaunion = yes
@@ -23,6 +27,7 @@ action_make_rival = {
 			trigger = {
 				is_megaunion = yes
 				FROM = {
+					is_seap_personality = no
 					NOR = {
 						is_megacorp = yes
 						is_megaunion = yes
@@ -33,8 +38,11 @@ action_make_rival = {
 		UNION_CORP_MAKE_RIVAL_PROPOSE = {
 			weight = { weight = 3 }
 			trigger = {
-				FROM = { is_megaunion = yes }
 				is_megacorp = yes
+				FROM = {
+					is_megaunion = yes
+					is_seap_personality = no
+				}
 			}
 		}
 		CORP_UNION_MAKE_RIVAL_PROPOSE = {
@@ -43,6 +51,7 @@ action_make_rival = {
 				is_megaunion = yes
 				FROM = {
 					is_megacorp = yes
+					is_seap_personality = no
 				}
 			}
 		}
@@ -50,7 +59,10 @@ action_make_rival = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
-				FROM = { is_megaunion = yes }
+				FROM = {
+					is_megaunion = yes
+					is_seap_personality = no
+				}
 			}
 		}
 	}
@@ -59,6 +71,7 @@ action_make_rival = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					NOR = {
 						is_megacorp = yes
@@ -76,6 +89,7 @@ action_make_rival = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					NOR = {
 						is_megacorp = yes
@@ -92,6 +106,7 @@ action_make_rival = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					NOR = {
 						is_megacorp = yes
@@ -108,7 +123,10 @@ action_make_rival = {
 		TO_UNION_MAKE_RIVAL_ACCEPT_HOSTILE = {
 			weight = { weight = 3 }
 			trigger = {
-				FROM = { is_megaunion = yes }
+				FROM = {
+					is_megaunion = yes
+				}
+				is_seap_personality = no
 				NOR = {
 					is_megacorp = yes
 					is_megaunion = yes
@@ -123,7 +141,10 @@ action_make_rival = {
 		TO_UNION_MAKE_RIVAL_ACCEPT_NEUTRAL = {
 			weight = { weight = 3 }
 			trigger = {
-				FROM = { is_megaunion = yes }
+				FROM = {
+					is_megaunion = yes
+				}
+				is_seap_personality = no
 				NOR = {
 					is_megacorp = yes
 					is_megaunion = yes
@@ -137,7 +158,10 @@ action_make_rival = {
 		TO_UNION_MAKE_RIVAL_ACCEPT_FRIENDLY = {
 			weight = { weight = 3 }
 			trigger = {
-				FROM = { is_megaunion = yes }
+				FROM = {
+					is_megaunion = yes
+				}
+				is_seap_personality = no
 				NOR = {
 					is_megacorp = yes
 					is_megaunion = yes
@@ -153,6 +177,7 @@ action_make_rival = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					is_megacorp = yes
 				}
@@ -161,14 +186,18 @@ action_make_rival = {
 		CORP_UNION_MAKE_RIVAL_ACCEPT = {
 			weight = { weight = 3 }
 			trigger = {
-				FROM = { is_megaunion = yes }
 				is_megacorp = yes
+				is_seap_personality = no
+				FROM = {
+					is_megaunion = yes
+				}
 			}
 		}
 		UNION_UNION_MAKE_RIVAL_ACCEPT = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					is_megaunion = yes
 				}
@@ -183,6 +212,7 @@ action_end_rivalry = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 			}
 		}
 	}
@@ -192,6 +222,7 @@ action_end_rivalry = {
 			trigger = {
 				is_megaunion = yes
 				FROM = {
+					is_seap_personality = no
 					NOR = {
 						is_megacorp = yes
 						is_megaunion = yes
@@ -209,6 +240,7 @@ action_end_rivalry = {
 			trigger = {
 				is_megaunion = yes
 				FROM = {
+					is_seap_personality = no
 					NOR = {
 						is_megacorp = yes
 						is_megaunion = yes
@@ -225,6 +257,7 @@ action_end_rivalry = {
 			trigger = {
 				is_megaunion = yes
 				FROM = {
+					is_seap_personality = no
 					NOR = {
 						is_megacorp = yes
 						is_megaunion = yes
@@ -244,7 +277,10 @@ action_end_rivalry = {
 					is_megaunion = yes
 					is_megacorp = yes
 				}
-				FROM = { is_megaunion = yes }
+				FROM = {
+					is_megaunion = yes
+					is_seap_personality = no
+				}
 				OR = {
 					is_unfriendly_to = FROM
 					is_domineering_to = FROM
@@ -256,7 +292,10 @@ action_end_rivalry = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
-				FROM = { is_megacorp = yes }
+				FROM = {
+					is_megacorp = yes
+					is_seap_personality = no
+				}
 				OR = {
 					is_friendly_to = FROM
 					is_cordial_to = FROM
@@ -267,12 +306,11 @@ action_end_rivalry = {
 		CORP_UNION_END_RIVALRY_FRIENDLY= {
 			weight = { weight = 3 }
 			trigger = {
-				NOR = {
+				is_megacorp = yes
+				FROM = {
 					is_megaunion = yes
-					is_megacorp = yes
-					has_ethic = ethic_gestalt_consciousness
+					is_seap_personality = no
 				}
-				FROM = { is_megaunion = yes }
 				OR = {
 					is_friendly_to = FROM
 					is_cordial_to = FROM
@@ -284,7 +322,10 @@ action_end_rivalry = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
-				FROM = { is_megacorp = yes }
+				is_seap_personality = no
+				FROM = {
+					is_megacorp = yes
+				}
 				OR = {
 					is_neutral_to = FROM
 					is_threatened_to = FROM
@@ -295,7 +336,10 @@ action_end_rivalry = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megacorp = yes
-				FROM = { is_megaunion = yes }
+				is_seap_personality = no
+				FROM = {
+					is_megaunion = yes
+				}
 				OR = {
 					is_neutral_to = FROM
 					is_threatened_to = FROM
@@ -306,7 +350,10 @@ action_end_rivalry = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
-				FROM = { is_megacorp = yes }
+				is_seap_personality = no
+				FROM = {
+					is_megacorp = yes
+				}
 				OR = {
 					is_unfriendly_to = FROM
 					is_threatened_to = FROM
@@ -319,7 +366,10 @@ action_end_rivalry = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megacorp = yes
-				FROM = { is_megaunion = yes }
+				is_seap_personality = no
+				FROM = {
+					is_megaunion = yes
+				}
 				OR = {
 					is_unfriendly_to = FROM
 					is_threatened_to = FROM
@@ -330,7 +380,10 @@ action_end_rivalry = {
 		UNION_UNION_END_RIVALRY= {
 			trigger = {
 				is_megaunion = yes
-				FROM = { is_megaunion = yes }
+				is_seap_personality = no
+				FROM = {
+					is_megaunion = yes
+				}
 			}
 		}
 	}
@@ -341,6 +394,7 @@ action_end_rivalry = {
 			trigger = {
 				is_megaunion = yes
 				FROM = {
+					is_seap_personality = no
 					NOR = {
 						is_megacorp = yes
 						is_megaunion = yes
@@ -352,6 +406,7 @@ action_end_rivalry = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					is_megacorp = yes
 				}
@@ -361,7 +416,11 @@ action_end_rivalry = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
-				FROM = { is_megaunion = yes }
+				is_seap_personality = no
+				FROM = {
+					is_megaunion = yes
+					is_seap_personality = no
+				}
 			}
 		}
 	}
@@ -412,6 +471,7 @@ action_declare_war = {
 			weight = { weight = 3000 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					exists = overlord
 					overlord = { is_same_value = ROOT }
@@ -425,6 +485,7 @@ action_declare_war = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					is_capitalism = yes
 				}
@@ -434,6 +495,7 @@ action_declare_war = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					is_capitalism = yes
 				}
@@ -443,6 +505,7 @@ action_declare_war = {
 			weight = { weight = 300 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					is_capitalism = no
 				}
@@ -467,6 +530,7 @@ action_offer_peace = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 			}
 		}
 	}
@@ -517,6 +581,7 @@ action_offer_peace = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 			}
 		}
 		# Fascists and Neoliberals
@@ -524,6 +589,7 @@ action_offer_peace = {
 			weight = { weight = 50 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 				FROM = {
 					OR = { 
 						is_fascist = yes
@@ -541,24 +607,28 @@ action_offer_peace = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 			}
 		}
 		UNION_PEACE_REFUSE_02 = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 			}
 		}
 		UNION_PEACE_REFUSE_03 = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 			}
 		}
 		UNION_PEACE_REFUSE_04 = {
 			weight = { weight = 3 }
 			trigger = {
 				is_megaunion = yes
+				is_seap_personality = no
 			}
 		}
 		UNION_VASSAL_PEACE_REFUSE_01 = {

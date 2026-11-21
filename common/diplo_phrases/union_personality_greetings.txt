@@ -233,6 +233,12 @@ greetings = {
 			has_ai_personality = humble_cooperative
 			NOT = { is_same_species = FROM }
 			NOT = { is_at_war_with = FROM }
+			FROM = { 
+				NOR = {
+					is_megacorp = yes
+					is_capitalism = yes
+				}
+			}
 			OR = {
 				is_hostile_to = FROM
 				is_unfriendly_to = FROM
@@ -247,6 +253,34 @@ greetings = {
 			has_ai_personality = humble_cooperative
 			NOT = { is_at_war_with = FROM }
 			FROM = { is_capitalism = yes }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	HCOOP_HOSTILE_GREETING_CORP_01 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = humble_cooperative
+			NOT = { is_at_war_with = FROM }
+			FROM = { is_megacorp = yes }
+			OR = {
+				is_hostile_to = FROM
+				is_unfriendly_to = FROM
+			}
+		}
+	}
+	HCOOP_HOSTILE_GREETING_CORP_02 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = humble_cooperative
+			NOT = { is_at_war_with = FROM }
+			FROM = { is_megacorp = yes }
 			OR = {
 				is_hostile_to = FROM
 				is_unfriendly_to = FROM
@@ -376,6 +410,19 @@ greetings = {
 		trigger = {
 			has_ai_personality = humble_cooperative
 			is_at_war_with = FROM
+		}
+	}
+	HCOOP_WAR_GREETING_04 = {
+		weight = {
+			weight = 3
+		}
+		trigger = {
+			has_ai_personality = humble_cooperative
+			is_at_war_with = FROM
+			is_anti_fascist = yes
+			FROM = {
+				is_fascist = yes
+			}
 		}
 	}
 	HCOOP_VASSAL_GREETING_01 = {
