@@ -420,6 +420,11 @@ greetings = {
 			has_ai_personality = humble_cooperative
 			is_at_war_with = FROM
 			is_anti_fascist = yes
+			OR = {
+				is_democracy = yes
+				is_democratic = yes
+				is_democratic_authority = yes
+			}
 			FROM = {
 				is_fascist = yes
 			}
