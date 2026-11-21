@@ -14,6 +14,8 @@
  gov_mineral_compact_desc:0 "A Megaunion that was forged by co-operatives of miners and metalworkers. Through controlling the construction and extraction industry, they dictate the direction of this empire."
  gov_fisher_guild:0 "Fishers' Guild"
  gov_fisher_guild_desc:0 "A Fishers' Guild mandates membership in a union of fishers in order to partake of the bounty of the seas. By maintaining a strong foothold in aquaculture, this Megaunion in turn controls the entire navy and shipping industry."
+ gov_energy_union:0 "Energy Workers' Union"
+ gov_energy_union:0 "This Megaunion began as a guild of technicians, electricians, and communications operators. Through controlling the production of energy, they consolidated authority. Their chief concerns still gravitate toward power and infrastructure."
 
  triggered_opinion_corp_vs_union:0 "$gov_megaunion$"
  triggered_opinion_union_vs_corp:0 "$gov_megacorporation$"
@@ -25,6 +27,7 @@
  RT_FOREMAN:0 "Foreman"
  RT_FOREMAN_WOMAN:0 "Foreperson"
  RT_FLEET_STEWARD:0 "Fleet Steward"
+ RT_MAS_ELECTR:0 "Grandmaster Technician"
 
  PRESCRIPTED_ship_prefix_teians: "TSV"
  PRESCRIPTED_species_teians: "Hiloan"

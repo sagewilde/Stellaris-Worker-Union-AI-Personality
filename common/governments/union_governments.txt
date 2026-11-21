@@ -67,7 +67,7 @@ gov_trade_league = {
 					is_egalitarian = yes
 					is_pacifist = yes
 				}
-				has_valid_civic = civic_corporate_dominion
+				has_valid_civic = civic_state_monopoly
 			}
 			AND = {
 				has_authority = auth_corporate
@@ -111,7 +111,7 @@ gov_communist_dictatorship = {
 			is_dictatorial_authority = yes
 			is_megaunion = yes
 		}
-		has_ethic = ethic_authoritarian
+		is_authoritarian = yes
 		has_valid_civic = civic_shared_burden
 	}
 	should_force_rename = yes
@@ -233,6 +233,39 @@ gov_fisher_guild = {
 			has_valid_civic = civic_corporate_anglers
 			has_valid_civic = civic_machine_anglers
 			has_valid_civic = civic_corporate_machine_anglers
+		}
+	}
+
+	weight = {
+		base = 1000
+	}
+}
+
+gov_energy_union = {
+	ruler_title = RT_MAS_ELECTR
+	ruler_title_female = RT_MAS_ELECTR
+
+	should_force_rename = yes
+
+	possible = {
+		OR = {
+			AND = {
+				is_oligarchic_authority = yes
+				OR = {
+					is_socialism = yes
+					NOR = {
+						is_capitalism = yes
+						is_pacifist = yes
+					}
+				}
+				has_valid_civic = civic_labour_unions
+			}
+			is_megaunion = yes
+		}
+		OR = {
+			has_trait = trait_ingenious
+			has_trait = trait_robot_superconductive
+			has_trait = trait_cyborg_superconductive
 		}
 	}
 

@@ -29,10 +29,15 @@ is_socialist_government = {
 		has_government = gov_anarchy_communism
 		has_government = gov_popular_front
 		has_government = gov_worker_coop
+		has_government = gov_agricultural_cooperative
+		has_government = gov_fisher_guild
+		has_government = gov_mineral_compact
+		has_government = gov_energy_union
 	}
 }
 
 is_fascist = {
+	values_others = no
 	OR = {
 		has_government = gov_national_socialism
 		has_government = gov_jingoism
@@ -48,6 +53,7 @@ is_fascist = {
 }
 
 is_anti_fascist = {
+	values_others = yes
 	OR = {
 		has_government = gov_anarchy_state
 		has_government = gov_anarchy_communism
@@ -55,7 +61,6 @@ is_anti_fascist = {
 		AND = {
 			has_ethic = ethic_fanatic_egalitarian
 			is_socialism = yes
-			values_others = yes
 		}
 	}
 }
